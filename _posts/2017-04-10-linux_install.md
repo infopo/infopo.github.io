@@ -5,6 +5,7 @@ title: linux mint install
 
 ## 듀얼부팅으로 linux mint를 실행하는 방법
 설치 환경: 윈도우10  
+
 준비물  
 - usb(2GB 이상)  
 - UUI(https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/#button)  
