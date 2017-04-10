@@ -8,8 +8,8 @@ title: linux mint install
 
 준비물  
 - usb(2GB 이상)  
-- UUI(https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/#button)  
-- linux mint Cinnamon 64-bit(https://www.linuxmint.com/download.php)  
+- [UUI](https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/#button)  
+- [linux mint Cinnamon 64-bit](https://www.linuxmint.com/download.php)  
 
 실행 순서  
 1. 작업 전 bios 설정  
@@ -28,8 +28,8 @@ title: linux mint install
   c. 설치 언어: 한국어  
   d. 키보드 - 한국어 / 한국어(101/104키 호환) (어짜피 설치 후 다시 설정 해줘야 함)  
   e. 업데이트, 서드파티 소프트웨어는 선택사항  
-  f. 설치 형식 -> 기타 -> 다음  
-  g. 
+  f. 설치 형식 &rarr; 기타 &rarr; 다음  
+  g. 드라이브 형식이 ext4인 것이 있을 것임 &rarr; 클릭  
 4. sadf    
 
 5. sadf
