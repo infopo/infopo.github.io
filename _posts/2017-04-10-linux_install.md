@@ -13,7 +13,7 @@ title: linux mint install
   c. usb 우선부팅  
 2. reeeeeee  
 3. asdfasdf  
-4. sadf  
+4. sadf    
 5. sadf
 6. sadf
 7. sadf
