@@ -12,7 +12,7 @@ title: linux mint install
 
 실행 순서  
 1. 작업 전 bios 설정  
-  a. boot mode: legacy mode  
+  a. boot mode: legacy mode  
   b. boot priority: legacy mode  
   c. usb 우선부팅  
 2. reeeeeee  
