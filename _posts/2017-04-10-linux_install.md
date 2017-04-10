@@ -9,9 +9,9 @@ title: linux mint install
 - usb(2GB 이상) 
 - UUI(https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/#button) 
 
-
-1. 작업 전 bios 설정  
-  a. boot mode: legacy mode  
+실행 순서
+1. 작업 전 bios 설정  
+  a. boot mode: legacy mode  
   b. boot priority: legacy mode  
   c. usb 우선부팅  
 2. reeeeeee  
