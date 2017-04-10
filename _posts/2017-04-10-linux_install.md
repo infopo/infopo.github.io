@@ -45,7 +45,7 @@ title: linux mint install
 5. sadf
 6. sadf 
 7. sadf       
-8. sadf
+8. sadfas
 9. sadf
 10. sadf
 11. sadf
