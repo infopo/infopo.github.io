@@ -21,7 +21,7 @@ String str = "hello world";
 System.out.println(str);
 ```
 
-```python3
+```python
 ls = [1, 2, 3, 4]
 print (ls)
 ```
