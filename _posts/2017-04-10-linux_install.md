@@ -40,7 +40,7 @@ title: linux mint install
   i. 설치 진행 &rarr; 완료 후 usb빼고 재부팅  
   j. 만약 grub 화면(linux mint, windows 선택 화면)이 뜨지 않는다면 &rarr; [grub오류해결](link)
 5. 한글 입력 설정  
-  a. 
+  a.  
 
 5. sadf
 6. sadf
