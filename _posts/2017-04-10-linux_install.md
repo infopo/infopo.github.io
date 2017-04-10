@@ -8,8 +8,8 @@ title: linux mint install
 
 준비물  
 - usb(2GB 이상)  
-- [UUI](https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/#button)  
-- [linux mint Cinnamon 64-bit](https://www.linuxmint.com/download.php)  
+- [UUI](https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/#button){:target="_blank"}  
+- [linux mint Cinnamon 64-bit](https://www.linuxmint.com/download.php){:target="_blank"}  
 
 실행 순서  
 1. 작업 전 bios 설정  
