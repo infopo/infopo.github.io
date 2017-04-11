@@ -23,7 +23,7 @@ title: linux mint install(듀얼부팅)
      ㄹ. step4: 건드릴 것 없음  
 3. HDD(SSD) 영역 확보  
   a. 파일탐색기  
-  b. 내 PC 우클릭 &rarr; 관리 &rarr; 디스크 관리
+  b. 내 PC 우클릭 &rarr; 관리 &rarr; 디스크 관리  
   c. 하단 (C:) 우클릭 &rarr; 볼륨 확장 &rarr; 다음 &rarr; 공간 선택(MB): 64000 (64GB 정도면 충분)
 4. 설치  
   a. usb 꽂고 재부팅(자동으로 민트 실행됨)  
