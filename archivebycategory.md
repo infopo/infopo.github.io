@@ -12,7 +12,7 @@ sitemap: false
 {% for category in categories %}
   <span class="site-tag">
     <a href="#{{ category | first | slugify }}">
-      {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
+      {{ category[0] | replace:'-', ' ' &nbsp;}} ({{ category | last | size }})
     </a>
   </span>
 {% endfor %}
