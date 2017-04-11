@@ -40,4 +40,10 @@ title: linux mint install
   i. 설치 진행 &rarr; 완료 후 usb빼고 재부팅  
   j. 만약 grub 화면(linux mint, windows 선택 화면)이 뜨지 않는다면 &rarr; [grub오류해결](link)
 5. 한글 입력 설정  
-  a.
+  a. menu → setting → languages → install/remove languages → korean → input method(languages 내의 상단 탭) →  UIM 설치 -> Input method(uim 선택)  
+  b. menu → setting → keyboard → layouts → + → korean(101/104key compatible) → 상단으로 올리기  
+  c. menu → uim input method → global settings → default input method:Byeoru → specify default IM(click)  
+  d. menu → input method → Byeoru key bindings1 → [Byeoru] on - edit - ‘한/영'키 입력 - add - 기존의 것은 삭제  
+  e. menu → input method → Byeoru key bindings1 → [Byeoru] off - edit - ‘한/영'키 입력 - add - 기존의 것은 삭제  
+  f. menu → input method → Byeoru key bindings1 → [Byeoru] convert hangul to chinese characters - edit - ‘한자'키 입력 - add - 기존의 것은 삭제  
+  g. 리부팅  
