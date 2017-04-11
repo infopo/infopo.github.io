@@ -3,7 +3,7 @@ layout: post
 title: plank-dock 설치
 category: Linux
 ---
-![_config.yml]({{ site.baseurl }}/images/config.png)
+![_config.yml]({{ site.baseurl }}/images/plank_dock.png)
 ```
 $ sudo add-apt-repository ppa:ricotz/docky
 $ sudo apt-get update && sudo apt-get install plank
