@@ -23,7 +23,7 @@ category: Linux
      ㄴ. step2: browse - 다운받은 iso파일 선택  
      ㄷ. step3: usb드라이버 선택, format 클릭  
      ㄹ. step4: 건드릴 것 없음  
-     
+  
 3. HDD(SSD) 영역 확보  
   a. 파일탐색기  
   b. 내 PC 우클릭 &rarr; 관리 &rarr; 디스크 관리  
@@ -54,7 +54,7 @@ category: Linux
     ㅅ. boot-repair 실행  
     ㅇ. recommended repair  
     ㅈ. 완료 후 재부팅  
-    
+  
 5. 한글 입력 설정  
   a. menu → setting → languages → install/remove languages → korean → input method(languages 내의 상단 탭) →  UIM 설치 -> Input method(uim 선택)  
   b. menu → setting → keyboard → layouts → + → korean(101/104key compatible) → 상단으로 올리기  
