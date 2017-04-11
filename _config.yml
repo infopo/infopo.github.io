@@ -4,7 +4,7 @@
 
 paginate: 5
 # Name of your site (displayed in the header)
-name: 시간이 지나면 다 알게 
+name: 시간이 지나면 다 알게 됨
 
 # Short bio or description (displayed in the header)
 #description: 시간이 지나면 다 알게 됨
@@ -13,7 +13,7 @@ name: 시간이 지나면 다 알게
 #avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 avatar: https://jongwoo315.github.io/images/Python2.jpg
 
-#
+# 
 # Flags below are optional
 #
 
