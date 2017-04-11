@@ -5,19 +5,20 @@ permalink: /categoryview/
 sitemap: false
 ---
 
+<!-- 전체 카테고리를 수평으로 나열 -->
 <div>
 {% assign categories = site.categories | sort %}
 
 {% for category in categories %}
- <span class="site-tag">
+  <span class="site-tag">
     <a href="#{{ category | first | slugify }}">
-            {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
+      {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
     </a>
-</span>
+  </span>
 {% endfor %}
 </div>
 
-
+<!-- 각 카테고리와 그에 해당하는 내용 출력 -->
 <div id="index">
 {% for category in categories %}
  <a name="{{ category[0] }}"></a> <h2>{{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})</h2>
@@ -25,8 +26,11 @@ sitemap: false
  {% for post in sorted_posts %}
   {%if post.categories contains category[0]%}
     <h3>
-      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}
-        <p class="date">{{ post.date |  date: "%B %e, %Y" }}</p>
+      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+        {{ post.title }}{{ post.date |  date: "%B %e, %Y" }}
+        <p class="date">
+          {{ post.date |  date: "%B %e, %Y" }}
+        </p>
       </a>
     </h3>
     <!--<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>-->
