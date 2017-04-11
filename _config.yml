@@ -1,6 +1,18 @@
 #
 # This file contains configuration flags to customize your site
 #
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
 paginate: 5
 # Name of your site (displayed in the header)
 name: JW
