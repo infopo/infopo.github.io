@@ -5,13 +5,4 @@ permalink: /about/
 ---
 
 <!--Some information about you!-->
-분석분석분석
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-<!--[email@domain.com](mailto:email@domain.com)-->
-[jongwoo315@gmail.com](mailto:jongwoo315@gmail.com)
+드랍박스 paper와 에버노트 계정에 있는 내용들, 빅데이터 수업 내용들을 정리한 블로그입니다.
