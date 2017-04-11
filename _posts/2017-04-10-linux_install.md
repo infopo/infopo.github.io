@@ -18,10 +18,10 @@ title: linux mint install
   c. usb 우선부팅  
 2. 부팅 usb 만들기  
   a. UUI 실행  
-    step1: select - linux mint  
-    step2: browse - 다운받은 iso파일 선택  
-    step3: usb드라이버 선택, format 클릭  
-    step4: 건드릴 것 없음  
+     ㄱ. step1: select - linux mint  
+     ㄴ. step2: browse - 다운받은 iso파일 선택  
+     ㄷ. step3: usb드라이버 선택, format 클릭  
+     ㄹ. step4: 건드릴 것 없음  
 3. HDD(SSD) 영역 확보
 4. 설치  
   a. usb 꽂고 재부팅(자동으로 민트 실행됨)  
