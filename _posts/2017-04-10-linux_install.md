@@ -16,16 +16,19 @@ category: Linux
   a. boot mode: legacy mode  
   b. boot priority: legacy mode  
   c. usb 우선부팅  
+  
 2. 부팅 usb 만들기  
   a. UUI 실행  
      ㄱ. step1: select - linux mint  
      ㄴ. step2: browse - 다운받은 iso파일 선택  
      ㄷ. step3: usb드라이버 선택, format 클릭  
      ㄹ. step4: 건드릴 것 없음  
+     
 3. HDD(SSD) 영역 확보  
   a. 파일탐색기  
   b. 내 PC 우클릭 &rarr; 관리 &rarr; 디스크 관리  
-  c. 하단 (C:) 우클릭 &rarr; 볼륨 확장 &rarr; 다음 &rarr; 공간 선택(MB): 64000 (64GB 정도면 충분)
+  c. 하단 (C:) 우클릭 &rarr; 볼륨 확장 &rarr; 다음 &rarr; 공간 선택(MB): 64000 (64GB 정도면 충분)  
+  
 4. 설치  
   a. usb 꽂고 재부팅(자동으로 민트 실행됨)  
   b. 바탕화면의 민트 설치하기 아이콘 클릭  
@@ -51,6 +54,7 @@ category: Linux
     ㅅ. boot-repair 실행  
     ㅇ. recommended repair  
     ㅈ. 완료 후 재부팅  
+    
 5. 한글 입력 설정  
   a. menu → setting → languages → install/remove languages → korean → input method(languages 내의 상단 탭) →  UIM 설치 -> Input method(uim 선택)  
   b. menu → setting → keyboard → layouts → + → korean(101/104key compatible) → 상단으로 올리기  
