@@ -1,9 +1,8 @@
 ---
 layout: post
-title: linux mint install
+title: linux mint install(듀얼부팅)
 ---
 
-### 듀얼부팅으로 linux mint를 실행하는 방법
 설치 환경: 윈도우10  
 
 준비물  
