@@ -1,6 +1,7 @@
 ---
 layout: post
 title: linux mint install(듀얼부팅)
+category: Linux
 ---
 
 설치 환경: 윈도우10  
