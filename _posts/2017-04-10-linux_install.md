@@ -40,7 +40,16 @@ title: linux mint install(듀얼부팅)
      ㅁ. 다음  
   h. 지역: seoul  
   i. 설치 진행 &rarr; 완료 후 usb빼고 재부팅  
-  j. 만약 grub 화면(linux mint, windows 선택 화면)이 뜨지 않는다면 &rarr; [grub오류해결](link)
+  j. 만약 grub 화면(linux mint, windows 선택 화면)이 뜨지 않는다면  
+    ㄱ. 인터넷연결필요  
+    ㄴ. 부팅usb꽂은 상태에서 try ubuntu without install 실행  
+    ㄷ. 터미널 실행  
+    ㄹ. sudo add-apt-repository ppa:yannubuntu/boot-repair  
+    ㅁ. sudo apt-get update  
+    ㅂ. sudo apt-get install -y boot-repair  
+    ㅅ. boot-repair 실행  
+    ㅇ. recommended repair  
+    ㅈ. 완료 후 재부팅  
 5. 한글 입력 설정  
   a. menu → setting → languages → install/remove languages → korean → input method(languages 내의 상단 탭) →  UIM 설치 -> Input method(uim 선택)  
   b. menu → setting → keyboard → layouts → + → korean(101/104key compatible) → 상단으로 올리기  
