@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Category
-permalink: /categoryview/
+permalink: /category/
 sitemap: false
 ---
 
