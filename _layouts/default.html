@@ -29,6 +29,11 @@
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <div class="container">
+              <div id="archives">
+                browse by <a title="The complete archvie of {{ site.name }}'s Blog by category" href="{{ site.url }}{{ site.baseurl }}//categoryview">category</a>
+              </div>
+            </div>
           </nav>
         </header>
       </div>
@@ -47,11 +52,5 @@
     </div>
 
     {% include analytics.html %}
-    
-    <div class="container">
-      <div id="archives">
-        browse by <a title="The complete archvie of {{ site.name }}'s Blog by category" href="{{ site.url }}{{ site.baseurl }}//categoryview">category</a>
-      </div>
-    </div>
   </body>
 </html>
