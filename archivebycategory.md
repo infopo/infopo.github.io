@@ -28,9 +28,9 @@ sitemap: false
   {%if post.categories contains category[0]%}
     <h3>
       <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-        {{ post.title }} | {{ post.date |  date: "%B %e, %Y" }}
+        {{ post.title }} |    {{ post.date |  date: "%B %e, %Y" }}
         <!--<p class="date">
-          {{ pot.date |  date: "%B %e, %Y" }}
+          {{ post.date |  date: "%B %e, %Y" }}
         </p>-->
       </a>
     </h3>
