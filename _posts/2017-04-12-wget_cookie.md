@@ -14,5 +14,5 @@ tar: Error is not recoverable: exiting now
 
 해결방법: __`--`no-cookies `--`header "Cookie: oraclelicense=accept-securebackup-cookie"__ 을 wget 뒤에 추가해주면 됩니다.
 ```
-$ wget http://.tar.gz --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"
+$ wget http://자바파일이름.tar.gz --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"
 ```
