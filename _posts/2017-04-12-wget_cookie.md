@@ -4,7 +4,7 @@ title: wget 관련 - tar -vxzf 오류 발생할 때
 category: Linux
 ---
 
-wget으로 받은 파일을 tar -vxzf하려고 할 때
+wget으로 받은 java파일을 tar -vxzf하려고 할 때
 ```
 gzip: stdin: not in gzip format
 tar: Child returned status 1
@@ -14,5 +14,5 @@ tar: Error is not recoverable: exiting now
 
 해결방법: __--no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"__ 을 wget 뒤에 추가해주면 됩니다.
 ```
-$ wget http://파일이름.tar.gz --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"
+$ wget http://.tar.gz --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"
 ```
