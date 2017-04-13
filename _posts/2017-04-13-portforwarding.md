@@ -32,7 +32,7 @@ orangepi 뒤에는 WAN ip주소가 들어가야 합니다.
   ![_config.yml]({{ site.baseurl }}/images/portforwarding.png)  
   
 4. 포트포워딩 설정  
-  a. adsfasdf  
+ a. adsfasdf  
   b. asdfasdf  
   c. qqqq  
   d. erqwe  
