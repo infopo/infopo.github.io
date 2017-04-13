@@ -30,6 +30,14 @@ orangepi 뒤에는 WAN ip주소가 들어가야 합니다.
   d. 내부포트: ssh접속에 필요한 port22를 지정  
   e. 프로토콜: tcp(기본)  
   ![_config.yml]({{ site.baseurl }}/images/portforwarding.png)  
+  
+4. 포트포워딩 설정
+  a. adsfasdf  
+  b. asdfasdf  
+  c. qqqq  
+  d. erqwe  
+  e. asdfasd  
+  
 
 외부(eg. 11.34.086.44)에서 우리집에 있는 오렌지파이(ip:172.30.1.51)로 ssh접속을 하고 싶다고 합시다.  
   
