@@ -19,7 +19,7 @@ jw@jw-lenovo $ ssh orangepi@172.30.1.51
 3. 외부에서 사설ip로 ssh 접속을 할 때  
 우선 172.30.1.254(관리자 페이지)로 들어가서 인터넷 연결정보에서 ip주소를 확인하고, **포트포워딩**도 해야합니다.  
 ```
-orangepi@WAN ip주소 -p 외부포트
+외부사용자@외부호스트 $ ssh orangepi@WAN ip주소 -p 외부포트
 ```  
 orangepi 뒤에는 WAN ip주소가 들어가야 합니다.  
 
