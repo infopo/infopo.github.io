@@ -3,7 +3,8 @@
 #
 
 paginate: 5
-#title: 시간이 지나면 다 알게 됨
+paginate_path: "/blog/page:num/"
+
 # Name of your site (displayed in the header)
 name: JW
 
