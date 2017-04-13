@@ -3,7 +3,7 @@ layout: post
 title: ssh로 라즈베리파이에 접속이 안 될 때
 category: SingleBoard
 ---
-노트북에서 ssh로 접속하려고 하는데 port22접속 거부가 나올 때가 있습니다.  
+노트북에서 ssh로 접속하려고 하는데 port22접속 메세지가 뜨는 경우가 있습니다.  
 
 준비물: hdmi선, 모니터, usb키보드  
 라즈베리파이 터미널로 들어가고 난 후  
@@ -68,7 +68,7 @@ Offending RSA key in /home/sward/.ssh/known_hosts:86
 RSA host key for [...] has changed and you have requested strict checking.
 Host key verification failed.
 ```
-이런 메시지가 뜨면서 여전히 접속은 불가능한 상태입니다.  
+이런 메시지가 뜨면서 여전히 접속은 불가능한 상태일 겁니다.  
 
 노트북 터미널에서 아래 명령어를 입력합니다.  
 ```
