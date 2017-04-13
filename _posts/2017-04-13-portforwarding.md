@@ -24,7 +24,7 @@ orangepi@WAN ip주소 -p 외부포트
 orangepi 뒤에는 WAN ip주소가 들어가야 한다
 
 4. 포트포워딩 설정
-![_config.yml]({{ site.baseurl }}/images/portforwarding.png)
+![_config.yml]({{ site.baseurl }}/images/portforwarding.png)  
 >소스ip, 소스포트는 필요없음  
 >외부포트 - 외부(집 아닌 다른 곳)에서 공인 ip주소를 입력할 때, 이 외부포트를 지정해줘야 이에 대응하는 내부ip로 접속이 되는 구조  
 >내부ip - 외부포트에 해당하는 내부 ip  
