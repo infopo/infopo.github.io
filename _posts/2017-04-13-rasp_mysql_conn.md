@@ -18,13 +18,13 @@ tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN
 ```
 <br>
 <br>
-아래 경로로 들어갑니다.  
+아래 경로로 들어갑니다.  
 ```
 $ sudo vi /etc/mysql/my.cnf  # 여기에 bind-address 항목이 없다면 아래 경로로 시도
 $ sudo vi /etc/mysql/mysql.cnf
 ```
-
-
+<br>
+<br>
 아래처럼 변경을 하고 저장, 종료합니다.  
 ```
 #bind-address=127.0.0.1  # 원래 127.0.0.1로 설정된 것은 주석처리
@@ -35,8 +35,8 @@ $ sudo vi /etc/mysql/mysql.cnf
 [mysqld]
 bind-address    = 0.0.0.0
 ```
-
-
+<br>
+<br>
 mysql을 다시 시작합니다.
 ```
 $ service mysql restart
@@ -47,8 +47,8 @@ Authenticating as: jwpi,,, (jwpi)
 Password: 
 ==== AUTHENTICATION COMPLETE ===
 ```
-
-
+<br>
+<br>
 127.0.0.1:3306이 0.0.0.0:3306으로 변경된 것을 확인할 수 있습니다.  
 ```
 $netstat -ntl
@@ -57,8 +57,8 @@ Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State      
 tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN     
 ```
-
-
+<br>
+<br>
 mysql에 접속하여 아래 명령어를 차례대로 입력합니다.  
 ```
 $mysql -u root -p
@@ -85,13 +85,14 @@ Query OK, 0 rows affected (0.00 sec)
 
 mysql> exit
 ```
-
+<br>
+<br>
 다시 한 번 mysql을 재시작합니다.  
 ```
 $ service mysql restart
 ```
-
-
+<br>
+<br>
 이제, 노트북이나 데스크탑에서 라즈베리파이의 mysql에 접속해봅시다.(외부에서 접속할 경우에는 포트포워딩이 필요함)  
 ```
 노트북사용자@노트북호스트 $ mysql -u root -h 라즈베리파이ip주소 -p
