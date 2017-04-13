@@ -16,8 +16,8 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State
 tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN     
 tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN
 ```
-  
-  
+<br/>  
+<br/>  
 아래 경로로 들어갑니다.  
 ```
 $ sudo vi /etc/mysql/my.cnf  # 여기에 bind-address 항목이 없다면 아래 경로로 시도
