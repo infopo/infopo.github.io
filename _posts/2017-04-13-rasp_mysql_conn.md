@@ -89,7 +89,7 @@ mysql> exit
 <br/>
 다시 한 번 mysql을 재시작합니다.  
 ```
-$ service mysql restart
+$ service mysql restart 
 ```
 <br/>  
 <br/>
