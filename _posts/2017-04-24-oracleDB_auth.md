@@ -3,8 +3,8 @@ layout: post
 title: 오라클SQL 권한 부여
 category: DB
 ---
-
-
+  
+  
 ## 기본적인 권한 부여
 
 ID가 user1, Password는 tiger로 계정을 생성하겠습니다.  
@@ -64,15 +64,16 @@ SQL> GRANT system_privilege TO PUBLIC;
 | DROP ANY TABLE | Grantee can drop a table in any schema. |
 | BACKUP ANY TABLE | Grantee can back up any table in any schema with the export utility. |
 | SELECT ANY TABLE | Grantee can query tables, views, or materialized views in any schema. |
-| CREATE ANY TABLE | Grantee can create tables in any schema. |
-- (user_name 대신 public을 사용하면 모든 사용자에게 해당 시스템 권한을 부여합니다.)
+| CREATE ANY TABLE | Grantee can create tables in any schema. |  
 
-- [ORA-01950 : 테이블 스페이스 'USERS'에 대한 권한이 없습니다 해결](http://zelits.tistory.com/29){:target="_blank"}
+- (user_name 대신 public을 사용하면 모든 사용자에게 해당 시스템 권한을 부여합니다.)  
+
+- [ORA-01950 : 테이블 스페이스 'USERS'에 대한 권한이 없습니다 해결](http://zelits.tistory.com/29){:target="_blank"}  
 ```
 sql > alter user user1 default tablespace users quota unlimited on users;
 ```
 
-**객체 권한**은 테이블이나 뷰나 시퀀스나 함수 등과 같은 객체별로 DML문(SELECT, INSERT, DELETE)을 사용할 수 있는 권한을 설정하는 것입니다.
+**객체 권한**은 테이블이나 뷰나 시퀀스나 함수 등과 같은 객체별로 DML문(SELECT, INSERT, DELETE)을 사용할 수 있는 권한을 설정하는 것입니다.  
 ```
 SQL> GRANT object_privilege  ON object TO user_name;
 ```
@@ -81,7 +82,7 @@ SQL> GRANT object_privilege  ON object TO user_name;
 
 ## 시스템/객체 권한종류
 
-1. 데이터베이스 관리자가 가지는 시스템 권한
+1. 데이터베이스 관리자가 가지는 시스템 권한  
 위 테이블 참고
 
 2. 일반 사용자가 가지는 시스템 권한  
