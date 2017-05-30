@@ -4,15 +4,14 @@ title: 오라클SQL 권한 부여
 category: DB
 ---
 
-# 기본적인 권한 부여
 
-```
-SQL> CONN system/비밀번호
-SQL> SHOW USER;
-```
+## 기본적인 권한 부여
 
 ID가 user1, Password는 tiger로 계정을 생성하겠습니다.  
 ```
+SQL> CONN system/비밀번호
+SQL> SHOW USER;
+
 SQL> CREATE USER user1 IDENTIFIED BY tiger;
 ```
 
@@ -55,7 +54,7 @@ SQL> GRANT system_privilege TO user_name;
 SQL> GRANT system_privilege TO PUBLIC;
 ```
 
-- system privilege
+- system privilege  
 | privilege | explanation |
 | :---: | :---: |
 | CREATE USER | Grantee can create other Oracle users. |
@@ -78,12 +77,12 @@ SQL> GRANT object_privilege  ON object TO user_name;
 
 ---
 
-# 시스템/객체 권한종류
+## 시스템/객체 권한종류
 
 1. 데이터베이스 관리자가 가지는 시스템 권한
 위 테이블 참고
 
-2. 일반 사용자가 가지는 시스템 권한
+2. 일반 사용자가 가지는 시스템 권한  
 | 권한 | 기능 |
 | :---: | :---: |
 | CREATE SESSION | 데이터베이스에 접속할 수 있는 권한 |
