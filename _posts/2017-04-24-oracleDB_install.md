@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 오라클SQL(developers) 설치/ (윈도우)
+title: 오라클SQL(developers) 설치/삭제 (윈도우)
 category: DB
 ---
 
