@@ -72,13 +72,12 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle - OraDb11g_home1\구
 10. 데이터베이스 저장 영역: 변경사항 없음
 11. 생성 옵션: 변경사항없음 → 완료
 12. 데이터베이스 생성 - 요약 → 확인
-
-- 설치진행  
-- 중간에 ora-00922가 뜨는데 그냥 무시하면됨  
-- ora-28000도 뜨는데 또 무시하면 됨  
-- 데이터베이스 생성완료팝업뜨면 비밀번호 관리 - SCOTT → 새비밀번호에 TIGER입력  
-    - [참고사이트1](http://www.allsoft.co.kr/bbs/board.php?bo_table=study4_2&wr_id=5){:target="_blank"}
-    - [참고사이트2](http://all4museum.tistory.com/entry/%EC%98%A4%EB%9D%BC%ED%81%B411g-DB-%EC%83%9D%EC%84%B1){:target="_blank"}
+13. 설치진행  
+ - 중간에 ora-00922가 뜨는데 그냥 무시하면됨  
+ - ora-28000도 뜨는데 또 무시하면 됨  
+14. 데이터베이스 생성완료팝업뜨면 비밀번호 관리 - SCOTT → 새비밀번호에 TIGER입력  
+  - [참고사이트1](http://www.allsoft.co.kr/bbs/board.php?bo_table=study4_2&wr_id=5){:target="_blank"}
+  - [참고사이트2](http://all4museum.tistory.com/entry/%EC%98%A4%EB%9D%BC%ED%81%B411g-DB-%EC%83%9D%EC%84%B1){:target="_blank"}
 
 ---
 
@@ -129,7 +128,7 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle - OraDb11g_home1\응
 
 ---
 
-## SQL Developer  
+## 입력  완료 후  다음경로로 이동  
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle - OraDb11g_home1\응용 프로그램 개발  
 
 - SQL Developer 실행  
@@ -147,7 +146,7 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle - OraDb11g_home1\응
 - 설치경로 설정에서 돋보기 누르면 자동으로 경로가 잡힘
 
 ---
-
+---
 
 # 삭제
 - [참고사이트1](http://srzero.tistory.com/entry/ORACLE-11G-%EC%82%AD%EC%A0%9C-%EC%8A%A4%EC%83%B7snapshot){:target="_blank"}
