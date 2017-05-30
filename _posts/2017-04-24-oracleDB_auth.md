@@ -55,7 +55,8 @@ SQL> GRANT system_privilege TO PUBLIC;
 ```
 
 - system privilege  
-
+  
+  
 | privilege | explanation |
 | :---: | :---: |
 | CREATE USER | Grantee can create other Oracle users. |
