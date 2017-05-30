@@ -42,11 +42,12 @@ category: DB
 - 1521 포트가 기본으로 설정된 것(서버가 물리적으로 다른 곳에 있다면, 방화벽개방을 해줘야한다)  
 - 오라클에서는 서버측의 리스너설치가 필요하고 클라이언트 측에서도 리스너접근을 위한 접속프로그램이 필요  
 
+---
+
 ## 설치완료 후 다음경로로 이동  
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle - OraDb11g_home1\구성 및 이전 툴  
 ~~시작메뉴에서 새로 설치된 프로그램에도 있음~~
 
----
 
 ## Database Configuration Assistant 실행  
 (설치과정에서 sid입력하는 곳이 있는지 확인) sid 입력넣는 곳 있음. sid는 sql developer 접속에 필요  
@@ -145,6 +146,7 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle - OraDb11g_home1\응
 - 다운받은 파일에서 exe파일을 실행
 - 설치경로 설정에서 돋보기 누르면 자동으로 경로가 잡힘
 
+---
 ---
 ---
 
