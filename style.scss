@@ -127,6 +127,10 @@ img {
 //     border:1px solid $gray;
 // }
 
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
 tr:nth-child(even) {background-color: #f2f2f2}
 // table관련 css 추가 끝
 
