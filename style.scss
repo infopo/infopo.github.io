@@ -126,17 +126,20 @@ img {
 // td{
 //     border:1px solid $gray;
 // }
-th, td {
-    padding: 15px;
-    text-align: center;
+
+th {
+    font-weight: bold;
 }
 
 th, td {
+    padding: 15px;
+    text-align: center;
     border: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
 
 tr:nth-child(even) {background-color: #f2f2f2}
+
 // table관련 css 추가 끝
 
 // Fixes images in popup boxes from Google Translate
