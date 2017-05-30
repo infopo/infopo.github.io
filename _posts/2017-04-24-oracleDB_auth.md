@@ -55,6 +55,7 @@ SQL> GRANT system_privilege TO PUBLIC;
 ```
 
 - system privilege  
+
 | privilege | explanation |
 | :---: | :---: |
 | CREATE USER | Grantee can create other Oracle users. |
@@ -83,6 +84,7 @@ SQL> GRANT object_privilege  ON object TO user_name;
 위 테이블 참고
 
 2. 일반 사용자가 가지는 시스템 권한  
+
 | 권한 | 기능 |
 | :---: | :---: |
 | CREATE SESSION | 데이터베이스에 접속할 수 있는 권한 |
