@@ -29,7 +29,7 @@ sitemap: false
     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
       <li>
         {{ post.title }}
-        <small class="post-date">{{ post.date |  date: "%B %e, %Y" }}</small>
+        <small class="post-date">{{ post.date |  date_to_string }}</small>
       </li>
     </a>
   {%endif%}
