@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -135,8 +135,8 @@ td{
 
 // category페이지의 날짜 class
 .post-date {
-  font-size: 13px;
-  color: $gray;
+  font-size: 14px;
+  color: $lightGray;
 }
 
 .date {
