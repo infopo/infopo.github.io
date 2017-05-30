@@ -26,7 +26,7 @@ sitemap: false
  {% assign sorted_posts = site.posts | sort: 'title' %}
  {% for post in sorted_posts %}
   {%if post.categories contains category[0]%}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+    <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
         {{ post.title }}
         <small class="post-date">{{ post.date |  date_to_string }}</small>
