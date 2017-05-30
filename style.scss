@@ -114,17 +114,17 @@ img {
 table{
     border-collapse: collapse;
     border-spacing: 0;
-    border:1px solid #000000;
+    border:1px solid $gray;
     font: $helvetica;
     color: $darkGray;
 }
 
 th{
-    border:1px solid #000000;
+    border:1px solid $gray;
 }
 
 td{
-    border:1px solid #000000;
+    border:1px solid $gray;
 }
 // table관련 css 추가 끝
 
