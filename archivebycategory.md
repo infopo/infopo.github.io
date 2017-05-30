@@ -26,15 +26,11 @@ sitemap: false
  {% assign sorted_posts = site.posts | sort: 'title' %}
  {% for post in sorted_posts %}
   {%if post.categories contains category[0]%}
-    <li>
-      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-        {{ post.date |  date: "%B %e, %Y" }} | &nbsp; &nbsp; {{ post.title }} 
-        <!--<p class="date">
-          {{ post.date |  date: "%B %e, %Y" }}
-        </p>-->
-      </a>
-    </li>
-    <!--<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>-->
+    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+      <li>
+        {{ post.title }}<small>{{ post.date |  date: "%B %e, %Y" }}</small>
+      </li>
+    </a>
   {%endif%}
  {% endfor %}
 {% endfor %}
