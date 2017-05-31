@@ -24,7 +24,8 @@ sitemap: false
  <a name="{{ category[0] }}"></a>
  <h2>{{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})</h2>
  <!--{% assign sorted_posts = site.posts | sort: 'title' %}--> <!--이건 제목별로 정렬(원본)-->
- {% assign sorted_posts = site.posts | sort: 'url' | reverse %} <!--날짜, 제목 이중정렬 -->
+ <!--{% assign sorted_posts = site.posts | sort: 'url' | reverse %}--> <!--날짜, 제목 이중정렬 -->
+ {% assign sorted_posts = (site.posts | sort: 'url') | reverse %}
    {% for post in sorted_posts %}
     {%if post.categories contains category[0]%}
       <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
