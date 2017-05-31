@@ -96,7 +96,7 @@ SQL> GRANT object_privilege  ON object TO user_name;
 | CREATE PROCEDURE | 사용자 스키마에서 함수를 생성할 수 있는 권한  |
 
 
-**일반사용자에게 관리자(시스템) 권한 부여**
+**일반사용자에게 관리자(시스템) 권한 부여**  
   - 일반 사용자에게 시스템 권한 부여할때 WIDH ADMIN OPTION을 붙여주면 그 사용자는 시스템 권한을 다른 사용자에게 부여할 수 있는 권한을 가지게됩니다.  
 
 ```
@@ -118,7 +118,7 @@ SQL> SELECT * FROM user_tab_privs_made;
 SQL> SELECT * FROM user_tab_privs_recd;
 ```
 
-**권한 뺏기/삭제/철회**
+**권한 뺏기/삭제/철회**  
   - 사용자에게 부여된 객체 권한을 데이터베이스 관리자(DBA)나 객체 소유자(OWNER)가 뺏을수 있습니다
 
 ```
@@ -127,7 +127,7 @@ SQL> REVOKE object_privilege  ON object FROM user_name;
 SQL> REVOKE SELECT ON emp FROM user1;
 ```
 
-**WITH GRANT OPTION**
+**WITH GRANT OPTION**  
   - 사용자에게 객체 권한을 WITH GRANT OPTION과 함께 부여하면 그 사용자는 그 객체를 접근할 권한을 부여 받으면서 그 권한을 다른 사용자에게 부여할 수 있는 권한도 함께 부여받게 됩니다.  
 
 ```
