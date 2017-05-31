@@ -83,7 +83,7 @@ SQL> GRANT object_privilege  ON object TO user_name;
 ## 시스템/객체 권한종류
 
 1. 데이터베이스 관리자가 가지는 시스템 권한  
-위 테이블 참고
+위 테이블 참고  
 
 2. 일반 사용자가 가지는 시스템 권한  
 
@@ -96,8 +96,9 @@ SQL> GRANT object_privilege  ON object TO user_name;
 | CREATE PROCEDURE | 사용자 스키마에서 함수를 생성할 수 있는 권한  |
 
 
-3. 일반사용자에게 관리자(시스템) 권한 부여
-- 일반 사용자에게 시스템 권한 부여할때 WIDH ADMIN OPTION을 붙여주면 그 사용자는 시스템 권한을 다른 사용자에게 부여할 수 있는 권한을 가지게됩니다.
+3. 일반사용자에게 관리자(시스템) 권한 부여  
+- 일반 사용자에게 시스템 권한 부여할때 WIDH ADMIN OPTION을 붙여주면 그 사용자는 시스템 권한을 다른 사용자에게 부여할 수 있는 권한을 가지게됩니다.  
+
 ```
 SQL> CONN SYSTEM/비밀번호
 SQL> CREATE USER user1 IDENTIFIED BY tiger;
@@ -105,26 +106,30 @@ SQL> GRANT CREATE SESSION TO user1  WITH ADMIN OPTION;
 SQL> CONN user1/tiger
 SQL> GRANT CREATE SESSION TO user2;
 ```
-- 위와같이 일반사용자 user1은 user2에게 CREATE SESSION이라는 시스템 권한을 부여할 수 있습니다.
 
-4. 권한 조회
+- 위와같이 일반사용자 user1은 user2에게 CREATE SESSION이라는 시스템 권한을 부여할 수 있습니다.  
+
+4. 권한 조회  
 - user_tab_privs_made : 현재 사용자가 다른 사용자에게 부여한 권한정보를 확인할 수 있습니다.
-- user_tab_privs_recd : 현재 사용자에게 부여된 권한정보를 확인할 수 있습니다.
+- user_tab_privs_recd : 현재 사용자에게 부여된 권한정보를 확인할 수 있습니다.  
+
 ```
 SQL> SELECT * FROM user_tab_privs_made; 
 SQL> SELECT * FROM user_tab_privs_recd;
 ```
 
-5. 권한 뺏기/삭제/철회
-- 사용자에게 부여된 객체 권한을 데이터베이스 관리자(DBA)나 객체 소유자(OWNER)가 뺏을수 있습니다.
+5. 권한 뺏기/삭제/철회  
+- 사용자에게 부여된 객체 권한을 데이터베이스 관리자(DBA)나 객체 소유자(OWNER)가 뺏을수 있습니다.  
+
 ```
 SQL> REVOKE object_privilege  ON object FROM user_name;
 -- 예
 SQL> REVOKE SELECT ON emp FROM user1;
 ```
 
-6. WITH GRANT OPTION
-- 사용자에게 객체 권한을 WITH GRANT OPTION과 함께 부여하면 그 사용자는 그 객체를 접근할 권한을 부여 받으면서 그 권한을 다른 사용자에게 부여할 수 있는 권한도 함께 부여받게 됩니다.
+6. WITH GRANT OPTION  
+- 사용자에게 객체 권한을 WITH GRANT OPTION과 함께 부여하면 그 사용자는 그 객체를 접근할 권한을 부여 받으면서 그 권한을 다른 사용자에게 부여할 수 있는 권한도 함께 부여받게 됩니다.  
+
 ```
 SQL> CONN  SCOTT/TIGER
 SQL> GRANT SELECT ON SCOTT.emp to user1 WITH GRANT OPTION;
