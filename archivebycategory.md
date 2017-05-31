@@ -23,7 +23,8 @@ sitemap: false
 {% for category in categories %}
  <a name="{{ category[0] }}"></a>
  <h2>{{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})</h2>
- {% assign sorted_posts = site.posts | sort: 'title' %}
+ <!--{% assign sorted_posts = site.posts | sort: 'title' %}-->
+ {% assign sorted_posts = site.posts | sort: 'date' %}
  {% for post in sorted_posts %}
   {%if post.categories contains category[0]%}
     <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
