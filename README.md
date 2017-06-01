@@ -1,3 +1,3 @@
-구글신!
+구글신
 
-![aaa]({{ site.baseurl }}/images/shot0144.png)
+![aaa](/images/shot0144.png)
