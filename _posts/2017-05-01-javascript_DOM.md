@@ -10,51 +10,51 @@ category: etc
 
 
 ### 1. JavaScript Reference  
-a. String  
-  - split()  
-    * string.split(separator,limit)  
-    * separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”  
-    * limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
-  - replace()  
-    * `var str = "Visit Microsoft!";`  
-    * `var res = str.replace("Microsoft", "W3Schools");`  
-    * `var str = "Mr Blue has a blue house and a blue car";`  
-    * `var res = str.replace(/blue/g, "red");`  
-    * `Mr Blue has a red house and a red car`
-b. Number
-c. Operators
-d. Statements
-e. Math
-f. Date
-g. Array
-  - push()
-  - var fruits = ["Banana", "Orange", "Apple", "Mango"];
-  - fruits.push("Kiwi");
-  - → Banana,Orange,Apple,Mango,Kiwi
-h. Boolean
-i. RegExp
-  - /pattern/modifiers;
-  - var patt = /w3schools/i
-  - Modifiers
-  - Brackets
-    * [abc]
-    * [0-9]
-  - Metacharacters
-  - Quantifiers
-  - RegExp Object Methods
-    * test()
-      - The test() method tests for a match in a string.
-      - `var str = "The best things in life are free";`
-      - `var patt = new RegExp("e");`
-      - `var res = patt.test(str);`
-j. Global
-k. Conversion
-l. Output
-  - JavaScript does NOT have any built-in print or display functions.
-  - Writing into an alert box, using window.alert().
-  - Writing into the HTML output using document.write().
-  - Writing into an HTML element, using innerHTML.
-  - Writing into the browser console, using console.log().re
+1. String  
+   - split()  
+     + string.split(separator,limit)  
+     + separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”  
+     + limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
+   - replace()  
+     + `var str = "Visit Microsoft!";`  
+     + `var res = str.replace("Microsoft", "W3Schools");`  
+     + `var str = "Mr Blue has a blue house and a blue car";`  
+     + `var res = str.replace(/blue/g, "red");`  
+     + Mr Blue has a red house and a red car
+2. Number  
+3. Operators  
+4. Statements  
+5. Math  
+6. Date  
+7. Array  
+   - push()  
+   - `var fruits = ["Banana", "Orange", "Apple", "Mango"];`
+   - `fruits.push("Kiwi");`
+   - → Banana,Orange,Apple,Mango,Kiwi
+8. Boolean
+9. RegExp
+   - /pattern/modifiers;
+   - var patt = /w3schools/i
+   - Modifiers
+   - Brackets
+     + [abc]
+     + [0-9]
+   - Metacharacters
+   - Quantifiers
+   - RegExp Object Methods
+     + test()
+       ㄱ. The test() method tests for a match in a string.
+       ㄴ. `var str = "The best things in life are free";`
+       ㄷ. `var patt = new RegExp("e");`
+       ㄹ. `var res = patt.test(str);`
+10. Global
+11. Conversion
+12. Output
+   - JavaScript does NOT have any built-in print or display functions.
+   - Writing into an alert box, using window.alert().
+   - Writing into the HTML output using document.write().
+   - Writing into an HTML element, using innerHTML.
+   - Writing into the browser console, using console.log().re
 
 ### 2. Browser Objects Reference
 a. Window - The window object represents an open window in a browser.
