@@ -11,7 +11,7 @@ category: etc
 
 ### 1. JavaScript Reference  
 1. String  
-   - split()  
+   - split()
      + string.split(separator,limit)  
      + separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”  
      + limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
@@ -43,10 +43,10 @@ category: etc
    - Quantifiers
    - RegExp Object Methods
      + test()
-       ㄱ. The test() method tests for a match in a string.
-       ㄴ. `var str = "The best things in life are free";`
-       ㄷ. `var patt = new RegExp("e");`
-       ㄹ. `var res = patt.test(str);`
+       * The test() method tests for a match in a string.
+       * `var str = "The best things in life are free";`
+       * `var patt = new RegExp("e");`
+       * `var res = patt.test(str);`
 10. Global
 11. Conversion
 12. Output
