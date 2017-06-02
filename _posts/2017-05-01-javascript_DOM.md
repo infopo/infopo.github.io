@@ -10,8 +10,8 @@ category: etc
 
 
 ### 1. JavaScript Reference  
-a. String
-  - split()
+a. String  
+  - split()  
     * string.split(separator,limit)  
     * separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”  
     * limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
