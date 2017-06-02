@@ -1,5 +1,5 @@
 ---
-layout: pot
+layout: post
 title: JavaScript and HTML DOM Reference
 category: etc
 ---
