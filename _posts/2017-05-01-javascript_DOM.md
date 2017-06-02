@@ -11,7 +11,7 @@ category: etc
 
 ### 1. JavaScript Reference  
 1. String  
-   - split()
+   - split()  
      + string.split(separator,limit)  
      + separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”  
      + limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
@@ -20,7 +20,7 @@ category: etc
      + `var res = str.replace("Microsoft", "W3Schools");`  
      + `var str = "Mr Blue has a blue house and a blue car";`  
      + `var res = str.replace(/blue/g, "red");`  
-     + Mr Blue has a red house and a red car
+     + Mr Blue has a red house and a red car  
 2. Number  
 3. Operators  
 4. Statements  
