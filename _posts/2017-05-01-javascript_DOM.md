@@ -10,9 +10,9 @@ category: etc
 1. JavaScript Reference
   a. String
     - split()
-      - string.split(separator,limit)
-      - separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”
-      - limit은 나누고 싶은 횟수 (넣지 않아도 됨)
+    ..- string.split(separator,limit)
+    ..- separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”
+    ..- limit은 나누고 싶은 횟수 (넣지 않아도 됨)
     - replace()
       - var str = "Visit Microsoft!";
       - var res = str.replace("Microsoft", "W3Schools");
@@ -43,10 +43,10 @@ category: etc
     - RegExp Object Methods
       - test()
         - The test() method tests for a match in a string.
-        - var str = "The best things in life are free";
-        - var patt = new RegExp("e");
-        - var res = patt.test(str);
-  j. Global
+        - `var str = "The best things in life are free";`
+        - `var patt = new RegExp("e");`
+        - `var res = patt.test(str);`
+j. Global
   k. Conversion
   l. Output
     - JavaScript does NOT have any built-in print or display functions.
@@ -54,6 +54,7 @@ category: etc
     - Writing into the HTML output using document.write().
     - Writing into an HTML element, using innerHTML.
     - Writing into the browser console, using console.log().re
+
 2. Browser Objects Reference
   - Window - The window object represents an open window in a browser.
     - Window Object Properties
