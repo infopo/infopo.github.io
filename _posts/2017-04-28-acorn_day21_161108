@@ -1,0 +1,101 @@
+---
+layout: post
+title: HTML, CSS, JavaScript - 16/11/08
+category: acorn수업
+---
+
+- [indent guide](http://sschaef.github.io/IndentGuide/update){:target="_blank"}
+
+> 1. 이클립스 - help - install new software - 위의 주소를 붙여넣고 enter - 설치
+> 2. 설정
+> 3. windows(상단 탭) - preferences - general - editors - text editors - indent guide
+
+---
+
+## HTML, CSS(2)
+1. Dropdown / Dropup
+  - [How TO - Clickable Dropdown](http://www.w3schools.com/howto/howto_js_dropdown.asp){:target="_blank"}
+  - [clickable dropdown](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_dropdown-menu-dropup&stacked=h){:target="_blank"}
+2. Accordion
+3. Frameset, topmenu, leftmenu
+4. [Carousel](http://www.w3schools.com/bootstrap/bootstrap_carousel.asp){:target="_blank"}
+5. [Scrollspy](http://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp){:target="_blank"}
+
+---
+
+- winscp for linux(Nautilus is default. other than that, filezilla and gftp)
+  - [is there any winscp equivalent for linux](http://stackoverflow.com/questions/299412/is-there-any-winscp-equivalent-for-linux){:target="_blank"}
+  - [what is a program similar to winscp](http://askubuntu.com/questions/94665/what-is-a-program-similar-to-winscp){:target="_blank"}
+
+---
+
+- [[웹 사이트를 구축하자] 정적 웹 페이지 vs 동적 웹 페이지](http://kradc.net/articles/study/web/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A5%BC-%EA%B5%AC%EC%B6%95%ED%95%98%EC%9E%90-%EC%A0%95%EC%A0%81-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80-vs-%EB%8F%99%EC%A0%81-%EC%9B%B9-%ED%8E%98%EC%9D%B4/){:target="_blank"}
+
+- [홈페이지 제작과정](http://www.homejjang.com/01/homepage_step.php){:target="_blank"}
+
+- [도메인 등록하고 내 서버와 연결하기](http://codelion.net/weeks/headline/4){:target="_blank"}
+
+- [cu.cc 무료 도메인 얻기](http://sanghaklee.tistory.com/12){:target="_blank"}
+
+---
+
+- [아파치, 톰캣, Nodejs 차이](http://lovestudycom.tistory.com/58){:target="_blank"}
+
+- [What is the difference between an Apache/nginx server and Node.js one?](https://www.quora.com/What-is-the-difference-between-an-Apache-nginx-server-and-Node-js-one){:target="_blank"}
+
+- [Beginner’s Guide to Node.js (Server-side JavaScript)](http://www.hongkiat.com/blog/node-js-server-side-javascript/){:target="_blank"}
+
+- [Running Node.js in apache? → nope](http://stackoverflow.com/questions/14369865/running-node-js-in-apache){:target="_blank"}
+
+- [Can Node.js integrate with MySQL on a server the same way PHP can? → yes](https://www.quora.com/Can-Node-js-integrate-with-MySQL-on-a-server-the-same-way-PHP-can){:target="_blank"}
+
+- [npmjs package - mysql](https://www.npmjs.org/package/mysql){:target="_blank"}
+
+- [Can we change the MongoDB to MySQL in MEAN stack?](https://www.quora.com/Can-we-change-the-MongoDB-to-MySQL-in-MEAN-stack){:target="_blank"}
+
+---
+
+- [setup a raspberry pi web server with your own .com using google domains](https://www.youtube.com/watch?v=vzojwG7OB7c&){:target="_blank"}
+
+- [How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-14-04){:target="_blank"}
+
+- [Getting Started with Node.js + MySQL](https://www.codementor.io/nodejs/tutorial/node-js-mysql){:target="_blank"}
+
+- [Node.js - Environment Setup](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm){:target="_blank"}
+
+---
+
+## Java Script
+
+- [[자바스크립트 완벽 가이드 정리] Window 객체](http://kssong.tistory.com/29){:target="_blank"}
+  -브라우저 내장객체
+![사진]({{ site.baseurl }}/image/jsob.png)
+
+```
+window.document.write("Hello Wordfdfdfld!")
+document.write("Hello Wordfdfdfld!") //둘다 같은 결과. window는 생략 가능
+```
+
+- JSON - 데이터 교환 방식(텍스트 기반)
+  - 자바 스크립트 에서 유래
+  - 인터넷 미디어 타입은 application/json
+  - 키, 데이터 방식으로 구성됨
+- XML - 데이터 교환 방식(텍스트 기반 아님)
+
+---
+
+기타) [이클립스 탭 색깔바꾸기](http://stackoverflow.com/questions/11961098/eclipse-juno-how-to-change-tab-color){:target="_blank"}
+> 1. general - appearance - view and editor folders
+> 2. active part background begin
+> 3. active part background end 둘 다 같은 색깔로
+> 4. 아니면 오른쪽에 reset을 눌러도 된다
+
+----------
+
+기타) atom html packages
+- linter js → node.js검사
+- linter  → html 검사
+- emmet
+  - !누르고 tab 누르면 템플릿 완성
+- atom-html-preview
+- autoclose-html
