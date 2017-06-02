@@ -11,17 +11,34 @@ category: etc
 
 ### 1. JavaScript Reference  
 
+
 1. String  
-   a. split()
-     + string.split(separator,limit)
-     + separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”
-     + limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
+   1. split()  
+      1. string.split(separator, limit)
+      2. separator &rarr; "" 혹은 " " 혹은 "," 혹은 "o" 혹은 ";"  
+      3. limit는 나누고 싶은 횟수(넣지 않아도 됨)                
+   2. replace()  
+      1. var str = "Visit Microsoft!  
+2. Number  
+
+
+
+
+
+
+### 1. JavaScript Reference  
+
+1. String  
+   a. split()  
+     ㄱ. string.split(separator,limit)  
+     ㄴ. separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”  
+     ㄷ. limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
    b. replace()  
-     + `var str = "Visit Microsoft!";`  
-     + `var res = str.replace("Microsoft", "W3Schools");`  
-     + `var str = "Mr Blue has a blue house and a blue car";`  
-     + `var res = str.replace(/blue/g, "red");`  
-     + Mr Blue has a red house and a red car  
+     ㄱ. `var str = "Visit Microsoft!";`  
+     ㄴ. `var res = str.replace("Microsoft", "W3Schools");`  
+     ㄷ. `var str = "Mr Blue has a blue house and a blue car";`  
+     ㄹ. `var res = str.replace(/blue/g, "red");`  
+     ㅁ. Mr Blue has a red house and a red car  
 2. Number  
 3. Operators  
 4. Statements  
