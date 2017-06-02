@@ -11,11 +11,11 @@ category: etc
 
 ### 1. JavaScript Reference  
 1. String  
-   - split()  
+   a. split()  
      + string.split(separator,limit)  
      + separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”  
      + limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
-   - replace()  
+   b. replace()  
      + `var str = "Visit Microsoft!";`  
      + `var res = str.replace("Microsoft", "W3Schools");`  
      + `var str = "Mr Blue has a blue house and a blue car";`  
