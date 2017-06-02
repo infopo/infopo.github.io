@@ -69,7 +69,7 @@ category: acorn수업
 
 - [[자바스크립트 완벽 가이드 정리] Window 객체](http://kssong.tistory.com/29){:target="_blank"}
   -브라우저 내장객체
-![사진]({{ site.baseurl }}/image/jsob.png)
+![사진]({{ site.baseurl }}/images/jsob.png)
 
 ```
 window.document.write("Hello Wordfdfdfld!")
