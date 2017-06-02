@@ -4,9 +4,9 @@ title: JavaScript and HTML DOM Reference
 category: etc
 ---
 
-
 - HTML DOM Reference
 - DOM(Document Object Model)은 HTML 문서의 모든 요소에 접근하는 방법을 정의한 API다.
+
 1. JavaScript Reference
   - 1-1. String
   - split()
@@ -98,6 +98,7 @@ category: etc
 - div
 - script
   - <script ATTRIBUTE=”VALUE”>
+  
 | ATTRIBUTE | VALUE                                                                                                   |
 | --------- | ------------------------------------------------------------------------------------------------------- |
 | type      | - text/javascript (this is default)
