@@ -56,6 +56,8 @@ category: etc
 ---
 
 ## Property
+| | |
+| --- | --- |
 | element.id | Sets or returns the value of the id attribute of an element |
 
 ```
