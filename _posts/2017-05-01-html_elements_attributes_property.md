@@ -26,7 +26,7 @@ category: etc
 
 ## HTML Attributes
 
-- [w3schools]http://www.w3schools.com/tags/ref_attributes.asp
+- [w3schools](http://www.w3schools.com/tags/ref_attributes.asp){:target="_blank"}
 
 | Attribute | Belongs to | Description |
 | --- | --- | --- |
