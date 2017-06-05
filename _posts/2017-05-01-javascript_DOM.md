@@ -95,9 +95,9 @@ category: etc
 
 ### 4. HTML Element Objects Reference (Tag)
 
-1. article
-2. div
-3. script
+- article
+- div
+- script
    - `<script ATTRIBUTE=”VALUE”>`  
 
 | ATTRIBUTE | VALUE                                                                                                   |
@@ -106,7 +106,7 @@ category: etc
 | charset   | charset                                                                                                 |
 | src       | URL                                                                                                     |
 
-4. input
+- input
    - `<input ATTRIBUTE=”VALUE”>`  
 
 | ATTRIBUTE | VALUE                                                                                          |
@@ -117,7 +117,7 @@ category: etc
 | value     | text                                                                                           |
 | width     | pixels                                                                                         |
 
-5. style
+- style
    - `document.getElementById("myH1").style.color = "red";`
    - `document.getElementById("myH1").style.PROPERTY = "VALUE";`
    - `var x = document.getElementsByTagName("STYLE");    // head의 style 부분에 선언한 것들 호출`  
@@ -130,16 +130,15 @@ category: etc
 | fontWeight      | bold                                |
 | cursor          | hand, wait, help, zoom-in, zoom-out |
 
-6. a
+- a
    - HTML \<a> 요소 (HTML 앵커 요소) 는 하이퍼링크를 정의합니다. 링크의 대상은 같은 페이지가 될 수도 있고, 웹의 어떤 다른 페이지도 될 수 있습니다. 
   - `<a id="myAnchor" href="http://www.w3schools.com">Tutorials</a>`
-7. table 
+- table 
    - table
    - [attributes](http://www.w3schools.com/tags/ref_attributes.asp){:target="_blank"}
-8. tr
+- tr
    - table row
    - [attributes](http://www.w3schools.com/tags/ref_attributes.asp){:target="_blank"}
-9. td
+- td
    - table data
    - [attributes](http://www.w3schools.com/tags/ref_attributes.asp){:target="_blank"}
-    
