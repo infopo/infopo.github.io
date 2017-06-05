@@ -98,14 +98,14 @@ category: etc
 1. article
 2. div
 3. script
-   - `<script ATTRIBUTE=”VALUE”>`
+   - `<script ATTRIBUTE=”VALUE”>`  
 | ATTRIBUTE | VALUE                                                                                                   |
 | --------- | ------------------------------------------------------------------------------------------------------- |
 | type      | - text/javascript (this is default)  - text/ecmascript  - application/ecmascript  - application/javascript  |
 | charset   | charset                                                                                                 |
 | src       | URL                                                                                                     |
 4. input
-   - `<input ATTRIBUTE=”VALUE”>`
+   - `<input ATTRIBUTE=”VALUE”>`  
 | ATTRIBUTE | VALUE                                                                                          |
 | --------- | ---------------------------------------------------------------------------------------------- |
 | type      | button, checkbox, color, date, datetime, email, file, image, number, password, text, time, url |
@@ -116,7 +116,7 @@ category: etc
 5. style
    - `document.getElementById("myH1").style.color = "red";`
    - `document.getElementById("myH1").style.PROPERTY = "VALUE";`
-   - `var x = document.getElementsByTagName("STYLE");    // head의 style 부분에 선언한 것들 호출`
+   - `var x = document.getElementsByTagName("STYLE");    // head의 style 부분에 선언한 것들 호출`  
 | PROPERTY        | VALUE                               |
 | --------------- | ----------------------------------- |
 | color           | red                                 |
