@@ -19,7 +19,9 @@ category: etc
       3. limit는 나누고 싶은 횟수(넣지 않아도 됨)                
    2. replace()  
       1. var str = "Visit Microsoft!  
-2. Number  
+2. Number
+3. Operators
+4. Statements
 
 
 
