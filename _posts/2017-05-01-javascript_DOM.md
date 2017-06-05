@@ -29,10 +29,21 @@ category: etc
    2. `var fruits = ["Banana", "Orange", "Apple", "Mango"];`
    3. `fruits.push("Kiwi");`
    4. &rarr; Banana, Orange, Apple, Mango, Kiwi
-      1. sadfadsf
-         1. dsafasdf
 8. Boolean
-
+9. RegExp
+   1. /pattern/modifiers;
+   2. `var patt = /w3schools/i`
+   3. Modifiers
+   4. Brackets
+      1. [abc]
+      2. [0-9]
+   5. Metacharacters
+   6. Quantifiers
+   7. RegExp Object Methods
+      1. test()
+         1. The test() method tests for a match in a string
+         2. `var str = "The best thing in life are free";`
+         3. 
 
 
 
