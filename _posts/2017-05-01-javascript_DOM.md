@@ -19,17 +19,25 @@ category: etc
       3. limit는 나누고 싶은 횟수(넣지 않아도 됨)                
    2. replace()  
       1. var str = "Visit Microsoft!  
+      
 2. Number
+
 3. Operators
+
 4. Statements
+
 5. Math
+
 6. Date
+
 7. Array
    1. push()
    2. `var fruits = ["Banana", "Orange", "Apple", "Mango"];`
    3. `fruits.push("Kiwi");`
    4. &rarr; Banana, Orange, Apple, Mango, Kiwi
+   
 8. Boolean
+
 9. RegExp
    1. /pattern/modifiers;
    2. `var patt = /w3schools/i`
@@ -41,11 +49,20 @@ category: etc
    6. Quantifiers
    7. RegExp Object Methods
       1. test()  
-         1. The test() method tests for a match in a string  
-         2. `var str = "The best thing in life are free";` 
-         3. `var patt = new RegExp("e");`  
-         4. `var res = patt.test(str);`  
-         5. adsfadf   
+         - The test() method tests for a match in a string  
+         - `var str = "The best thing in life are free";` 
+         - `var patt = new RegExp("e");`  
+         - `var res = patt.test(str);`  
+         - adsfadf   
+      2. asdfsadf
+   8. asdfasdf
+9. asdf
+   1. asdf
+      1. dsafdf
+9. asdfsadf
+   1. asd
+      1. asdfsdf
+
 ### 1. JavaScript Reference  
 
 1. String  
