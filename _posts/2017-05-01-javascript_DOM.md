@@ -99,13 +99,16 @@ category: etc
 2. div
 3. script
    - `<script ATTRIBUTE=”VALUE”>`  
+
 | ATTRIBUTE | VALUE                                                                                                   |
 | --------- | ------------------------------------------------------------------------------------------------------- |
 | type      | - text/javascript (this is default)  - text/ecmascript  - application/ecmascript  - application/javascript  |
 | charset   | charset                                                                                                 |
 | src       | URL                                                                                                     |
+
 4. input
    - `<input ATTRIBUTE=”VALUE”>`  
+
 | ATTRIBUTE | VALUE                                                                                          |
 | --------- | ---------------------------------------------------------------------------------------------- |
 | type      | button, checkbox, color, date, datetime, email, file, image, number, password, text, time, url |
@@ -113,10 +116,12 @@ category: etc
 | src       | URL                                                                                            |
 | value     | text                                                                                           |
 | width     | pixels                                                                                         |
+
 5. style
    - `document.getElementById("myH1").style.color = "red";`
    - `document.getElementById("myH1").style.PROPERTY = "VALUE";`
    - `var x = document.getElementsByTagName("STYLE");    // head의 style 부분에 선언한 것들 호출`  
+
 | PROPERTY        | VALUE                               |
 | --------------- | ----------------------------------- |
 | color           | red                                 |
@@ -124,6 +129,7 @@ category: etc
 | border          | 1px solid royalblue                 |
 | fontWeight      | bold                                |
 | cursor          | hand, wait, help, zoom-in, zoom-out |
+
 6. a
    - HTML \<a> 요소 (HTML 앵커 요소) 는 하이퍼링크를 정의합니다. 링크의 대상은 같은 페이지가 될 수도 있고, 웹의 어떤 다른 페이지도 될 수 있습니다. 
   - `<a id="myAnchor" href="http://www.w3schools.com">Tutorials</a>`
