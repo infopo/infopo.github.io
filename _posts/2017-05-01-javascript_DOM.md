@@ -12,34 +12,34 @@ category: etc
 ### 1. JavaScript Reference  
 
 1. String  
-   1. split()  
-      1. string.split(separator, limit)
-      2. separator &rarr; "" 혹은 " " 혹은 "," 혹은 "o" 혹은 ";"  
-      3. limit는 나누고 싶은 횟수(넣지 않아도 됨)                
-   2. replace()  
-      1. var str = "Visit Microsoft!        
+   - split()  
+      - string.split(separator, limit)
+      - separator &rarr; "" 혹은 " " 혹은 "," 혹은 "o" 혹은 ";"  
+      - limit는 나누고 싶은 횟수(넣지 않아도 됨)                
+   - replace()  
+      - var str = "Visit Microsoft!        
 2. Number
 3. Operators
 4. Statements
 5. Math
 6. Date
 7. Array
-   1. push()
-   2. `var fruits = ["Banana", "Orange", "Apple", "Mango"];`
-   3. `fruits.push("Kiwi");`
-   4. &rarr; Banana, Orange, Apple, Mango, Kiwi
+   - push()
+   - `var fruits = ["Banana", "Orange", "Apple", "Mango"];`
+   - `fruits.push("Kiwi");`
+   - &rarr; Banana, Orange, Apple, Mango, Kiwi
 8. Boolean
 9. RegExp
-   1. /pattern/modifiers;
-   2. `var patt = /w3schools/i`
-   3. Modifiers
-   4. Brackets
-      1. [abc]
-      2. [0-9]
-   5. Metacharacters
-   6. Quantifiers
-   7. RegExp Object Methods
-      1. test()  
+   - /pattern/modifiers;
+   - `var patt = /w3schools/i`
+   - Modifiers
+   - Brackets
+      - [abc]
+      - [0-9]
+   - Metacharacters
+   - Quantifiers
+   - RegExp Object Methods
+      - test()  
          - The test() method tests for a match in a string  
          - `var str = "The best thing in life are free";` 
          - `var patt = new RegExp("e");`  
@@ -48,10 +48,10 @@ category: etc
 9. Global
 9. Conversion
 9. Output
-   1. JavaScript does NOT have any built-in print or display functions.
-   2. Writing into an alert box, using **window.alert()**.
-   3. Writing into the HTML output using **document.write()**.
-   4. Writing into the browser console, using **console.log()**.
+   - JavaScript does NOT have any built-in print or display functions.
+   - Writing into an alert box, using **window.alert()**.
+   - Writing into the HTML output using **document.write()**.
+   - Writing into the browser console, using **console.log()**.
 
 ### 2. Browser Objects Reference
 
