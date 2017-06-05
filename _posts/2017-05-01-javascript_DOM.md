@@ -43,7 +43,13 @@ category: etc
       1. test()
          1. The test() method tests for a match in a string
          2. `var str = "The best thing in life are free";`
-         3. 
+         3. `var patt = new RegExp("e");`
+         4. `var res = patt.test(str);`  
+10. Global
+11. Conversion
+12. Output  
+   1. JavaScript does NOT have any built-in print or display function.
+   2. 
 
 
 
