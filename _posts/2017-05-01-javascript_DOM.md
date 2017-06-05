@@ -22,7 +22,16 @@ category: etc
 2. Number
 3. Operators
 4. Statements
-
+5. Math
+6. Date
+7. Array
+   1. push()
+   2. 'var fruits = ["Banana", "Orange", "Apple", "Mango"];'
+   3. 'fruits.push("Kiwi");
+   4. &rarr; Banana, Orange, Apple, Mango, Kiwi
+      1. sadfadsf
+         1. dsafasdf
+8. Boolean
 
 
 
