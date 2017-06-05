@@ -11,33 +11,24 @@ category: etc
 
 ### 1. JavaScript Reference  
 
-
 1. String  
    1. split()  
       1. string.split(separator, limit)
       2. separator &rarr; "" 혹은 " " 혹은 "," 혹은 "o" 혹은 ";"  
       3. limit는 나누고 싶은 횟수(넣지 않아도 됨)                
    2. replace()  
-      1. var str = "Visit Microsoft!  
-      
+      1. var str = "Visit Microsoft!        
 2. Number
-
 3. Operators
-
 4. Statements
-
 5. Math
-
 6. Date
-
 7. Array
    1. push()
    2. `var fruits = ["Banana", "Orange", "Apple", "Mango"];`
    3. `fruits.push("Kiwi");`
    4. &rarr; Banana, Orange, Apple, Mango, Kiwi
-   
 8. Boolean
-
 9. RegExp
    1. /pattern/modifiers;
    2. `var patt = /w3schools/i`
@@ -54,103 +45,56 @@ category: etc
          - `var patt = new RegExp("e");`  
          - `var res = patt.test(str);`  
          - adsfadf   
-      2. asdfsadf
-   8. asdfasdf
-9. asdf
-   1. asdf
-      1. dsafdf
-9. asdfsadf
-   1. asd
-      1. asdfsdf
-
-### 1. JavaScript Reference  
-
-1. String  
-   a. split()  
-     ㄱ. string.split(separator,limit)  
-     ㄴ. separator → “” 혹은 “ “ 혹은 “,” 혹은 “o”혹은 “;”  
-     ㄷ. limit은 나누고 싶은 횟수 (넣지 않아도 됨)  
-   b. replace()  
-     ㄱ. `var str = "Visit Microsoft!";`  
-     ㄴ. `var res = str.replace("Microsoft", "W3Schools");`  
-     ㄷ. `var str = "Mr Blue has a blue house and a blue car";`  
-     ㄹ. `var res = str.replace(/blue/g, "red");`  
-     ㅁ. Mr Blue has a red house and a red car  
-2. Number  
-3. Operators  
-4. Statements  
-5. Math  
-6. Date  
-7. Array  
-   - push()  
-   - `var fruits = ["Banana", "Orange", "Apple", "Mango"];`
-   - `fruits.push("Kiwi");`
-   - → Banana,Orange,Apple,Mango,Kiwi
-8. Boolean
-9. RegExp
-   - /pattern/modifiers;
-   - var patt = /w3schools/i
-   - Modifiers
-   - Brackets
-     + [abc]
-     + [0-9]
-   - Metacharacters
-   - Quantifiers
-   - RegExp Object Methods
-     + test()
-       * The test() method tests for a match in a string.
-       * `var str = "The best things in life are free";`
-       * `var patt = new RegExp("e");`
-       * `var res = patt.test(str);`
-10. Global
-11. Conversion
-12. Output
-   - JavaScript does NOT have any built-in print or display functions.
-   - Writing into an alert box, using window.alert().
-   - Writing into the HTML output using document.write().
-   - Writing into an HTML element, using innerHTML.
-   - Writing into the browser console, using console.log().re
+9. Global
+9. Conversion
+9. Output
+   1. JavaScript does NOT have any built-in print or display functions.
+   2. Writing into an alert box, using **window.alert()**.
+   3. Writing into the HTML output using **document.write()**.
+   4. Writing into the browser console, using **console.log()**.
 
 ### 2. Browser Objects Reference
-a. Window - The window object represents an open window in a browser.
-  - Window Object Properties
-  - Window Object Methods
-    * alert()
-      - alert("Hello! I am an alert box!!");
-b. Navigator
-c. Screen
-d. History
-e. Location
+
+- Window - The window object represents an open window in a browser.
+   - Window Object Properties
+   - Window Object Methods
+       - alert()
+       - alert("Hello! I am an alert box!!");
+- Navigator
+- Screen
+- History
+- Location
   
 ### 3. HTML DOM Reference
-a. DOM Document — (Document는 HTML문서 전체를 대상으로 함)
-  - cookie
-    * returns all name/value pairs of cookies in the current document
-    * `document.cookie="username=John Doe; expires=Thu, 18 Dec 2013 12:00:00; path=/";`
-  - write()
-    * Write some text directly to the HTML document
-    * `document.write("Hello World!");`
-b. DOM Elements — (Elements는 HTML문서 내의 Elements (eg. \<h1>, \<p> 등을 대상으로 함)
-  - innerHTML
-    * `document.getElementById("demo").innerHTML = "Paragraph changed!";`
-      - The innerHTML property sets or returns the HTML content (inner HTML) of an element.
-      - demo 내의 모든 속성들을 같이 가져온다
-      - [링크](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_innerhtml){:target="_blank"}
-  - id
-    * `var x = document.getElementById("myAnchor").id;`
-    * The id property returns the id of an element
-c. DOM Attributes
-d. DOM Events
-  - onclick
-    * HTML → `<element onclick="내가 선언한 함수()">`
-      - element → h1 - h6, p, input 같은 object들
-    * JavaScript → object.onclick=function(){내가 선언한 함수()};
-  - onmouseover, onmouseout
-    * HTML → `<element onmouseover="내가 선언한 함수()">`
-    * JavaScript → object.onmouseover=function(){내가 선언한 함수()};
-e. DOM Style
+1. DOM Document — (Document는 HTML문서 전체를 대상으로 함)
+   - cookie
+      - returns all name/value pairs of cookies in the current document
+      - `document.cookie="username=John Doe; expires=Thu, 18 Dec 2013 12:00:00; path=/";`
+   - write()
+     - Write some text directly to the HTML document
+     - `document.write("Hello World!");`
+2. DOM Elements — (Elements는 HTML문서 내의 Elements (eg. \<h1>, \<p> 등을 대상으로 함)
+   - innerHTML
+     - `document.getElementById("demo").innerHTML = "Paragraph changed!";`
+     - The innerHTML property sets or returns the HTML content (inner HTML) of an element.
+     - demo 내의 모든 속성들을 같이 가져온다
+     - [링크](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_innerhtml){:target="_blank"}
+   - id
+     - `var x = document.getElementById("myAnchor").id;`
+     - The id property returns the id of an element
+3. DOM Attributes
+4. DOM Events
+   - onclick
+     - HTML → `<element onclick="내가 선언한 함수()">`
+     - element → h1 - h6, p, input 같은 object들
+   - JavaScript → object.onclick=function(){내가 선언한 함수()};
+   - onmouseover, onmouseout
+     - HTML → `<element onmouseover="내가 선언한 함수()">`
+     - JavaScript → object.onmouseover=function(){내가 선언한 함수()};
+5. DOM Style
 
 ### 4. HTML Element Objects Reference (Tag)
+
 a. article
 b. div
 c. script
