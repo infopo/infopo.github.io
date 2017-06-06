@@ -12,9 +12,8 @@ category: etc
 - tomcat-dbcp.jar를 실행하고 /org/apache/tomcat/dbcp/로 들어가면, pool2, dvcp2가 있음을 확인할 수 있다.
 - apache에서 dbcp, pool을 다운 받을 필요가 없다.
 
----
 
-설정
+### 설정
 
 1. 자신의 프로젝트 이름(dynamic web project) - 우클릭 - properties - java build path
    - add external jars
