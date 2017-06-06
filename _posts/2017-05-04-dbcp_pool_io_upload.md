@@ -126,10 +126,10 @@ category: etc
 <p align="center">사진 좌측 하단에 조금 잘렸는데, 저기에 context.xml이 있다</p>
 
 ![사진]({{ site.baseurl }}/images/dbcp_pool_io_upload_2.png)
-<p align="center">WEB-INF &rarr; lib에 import된 jar파일들</p>
+WEB-INF &rarr; lib에 import된 jar파일들
 
 ![사진]({{ site.baseurl }}/images/dbcp_pool_io_upload_3.png)
-<p align="center">프로젝트 전체 구조</p>
+프로젝트 전체 구조
 
 ---
 
