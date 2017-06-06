@@ -31,20 +31,20 @@ category: etc
      - 서블릿의 (DataSource)context.lookup("java:comp/env/jdbc/myconn");
      - 부분이 일치하기만 하면 됨
      - acorn은 DB이름 (mysql에서 use acorn;을 먼저 실행할 것)
-    ```
-    <?xml version="1.0" encoding="UTF-8"?>
-    
-    <Context>
-        <!-- Resource를 등록하여 웹에서 JNDI로 호출할 이름과 정보를 설정한다-->
-        <Resource name="jdbc/myconn" auth="Container" type="javax.sql.DataSource"
-                        factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
-                        driverClassName="com.mysql.jdbc.Driver"          
-                        url="jdbc:mysql://localhost:3306/acorn?autoReconnect=true"
-                        
-                        username="root" password="123"
-                        maxActive="100" maxIdle="30" maxWait="10000"
-                        removeAbandoned="true" removeAbandonedTimeout="60"/>
-    </Context>
+     ```
+       <?xml version="1.0" encoding="UTF-8"?>
+
+       <Context>
+           <!-- Resource를 등록하여 웹에서 JNDI로 호출할 이름과 정보를 설정한다-->
+           <Resource name="jdbc/myconn" auth="Container" type="javax.sql.DataSource"
+                           factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+                           driverClassName="com.mysql.jdbc.Driver"          
+                           url="jdbc:mysql://localhost:3306/acorn?autoReconnect=true"
+
+                           username="root" password="123"
+                           maxActive="100" maxIdle="30" maxWait="10000"
+                           removeAbandoned="true" removeAbandonedTimeout="60"/>
+       </Context>
     ```
 4. WebContent - WEB-INF - web.xml
     ```
@@ -72,45 +72,45 @@ category: etc
     </web-app>
     ```
 5. Project Explorer(자신의 프로젝트리스트가 있는 탭)의 아래쪽에 Servers 클릭
-   - META-INF - Context.xml의 내용을 Servers - Tomcat v8.5 Server at localhost-config - context.xml에 붙여넣는다.
+   - META-INF - Context.xml의 내용을 Servers - Tomcat v8.5 Server at localhost-config - context.xml에 붙여넣는다.  
     ```
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!--
-      Licensed to the Apache Software Foundation (ASF) under one or more
-      contributor license agreements.  See the NOTICE file distributed with
-      this work for additional information regarding copyright ownership.
-      The ASF licenses this file to You under the Apache License, Version 2.0
-      (the "License"); you may not use this file except in compliance with
-      the License.  You may obtain a copy of the License at
-    
-          http://www.apache.org/licenses/LICENSE-2.0
-    
-      Unless required by applicable law or agreed to in writing, software
-      distributed under the License is distributed on an "AS IS" BASIS,
-      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-      See the License for the specific language governing permissions and
-      limitations under the License.
-    --><!-- The contents of this file will be loaded for each web application -->
-    <Context>
-    
-        <!-- Default set of monitored resources. If one of these changes, the    -->
-        <!-- web application will be reloaded.                                   -->
-        <WatchedResource>WEB-INF/web.xml</WatchedResource>
-        <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
-    
-        <!-- Uncomment this to disable session persistence across Tomcat restarts -->
-        <!--
-        <Manager pathname="" />
-        -->
-        <Resource name="jdbc/myconn" auth="Container" type="javax.sql.DataSource"
-                        factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
-                        driverClassName="com.mysql.jdbc.Driver"                    
-                        url="jdbc:mysql://localhost:3306/acorn?autoReconnect=true"
-                        
-                        username="root" password="123"
-                        maxActive="100" maxIdle="30" maxWait="10000"
-                        removeAbandoned="true" removeAbandonedTimeout="60"/>   
-    </Context>
+       <?xml version="1.0" encoding="UTF-8"?>
+       <!--
+         Licensed to the Apache Software Foundation (ASF) under one or more
+         contributor license agreements.  See the NOTICE file distributed with
+         this work for additional information regarding copyright ownership.
+         The ASF licenses this file to You under the Apache License, Version 2.0
+         (the "License"); you may not use this file except in compliance with
+         the License.  You may obtain a copy of the License at
+
+             http://www.apache.org/licenses/LICENSE-2.0
+
+         Unless required by applicable law or agreed to in writing, software
+         distributed under the License is distributed on an "AS IS" BASIS,
+         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         See the License for the specific language governing permissions and
+         limitations under the License.
+       --><!-- The contents of this file will be loaded for each web application -->
+       <Context>
+
+           <!-- Default set of monitored resources. If one of these changes, the    -->
+           <!-- web application will be reloaded.                                   -->
+           <WatchedResource>WEB-INF/web.xml</WatchedResource>
+           <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+
+           <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+           <!--
+           <Manager pathname="" />
+           -->
+           <Resource name="jdbc/myconn" auth="Container" type="javax.sql.DataSource"
+                           factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+                           driverClassName="com.mysql.jdbc.Driver"                    
+                           url="jdbc:mysql://localhost:3306/acorn?autoReconnect=true"
+
+                           username="root" password="123"
+                           maxActive="100" maxIdle="30" maxWait="10000"
+                           removeAbandoned="true" removeAbandonedTimeout="60"/>   
+       </Context>
     ```
 6. terminal
    - sudo nano /etc/environment
