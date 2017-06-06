@@ -15,21 +15,22 @@ category: etc
 ---
 
 설정
+
 1. 자신의 프로젝트 이름(dynamic web project) - 우클릭 - properties - java build path
-  1. add external jars
-    1. mysql-connector-java.jar (위치: /usr/share/java)
-    2. servlet-api.jar (위치: /usr/local/tomcat/lib)
+   - add external jars
+     - mysql-connector-java.jar (위치: /usr/share/java)
+     - servlet-api.jar (위치: /usr/local/tomcat/lib)
 2. WebContent - WEB-INF - lib
-  1. 우클릭 - import
-    1. mysql.jar (위치: /usr/share/java)
-    2. servlet-api.jar (위치: /usr/local/tomcat/lib)
-    3. tomcat-dbcp.jar (위치: /usr/local/tomcat/lib)
+   - 우클릭 - import
+     - mysql.jar (위치: /usr/share/java)
+     - servlet-api.jar (위치: /usr/local/tomcat/lib)
+     - tomcat-dbcp.jar (위치: /usr/local/tomcat/lib)
 3. WebContent - META-INF - Context.xml
-  1. name="jdbc/myconn"에서 myconn은 임의의 문자가 와도 상관없다. 
-    1. web.xml의 <res-ref-name>jdbc/myconn</res-ref-name>,
-    2. 서블릿의 (DataSource)context.lookup("java:comp/env/jdbc/myconn");
-    3. 부분이 일치하기만 하면 됨
-    4. acorn은 DB이름 (mysql에서 use acorn;을 먼저 실행할 것)
+   - name="jdbc/myconn"에서 myconn은 임의의 문자가 와도 상관없다. 
+     - web.xml의 <res-ref-name>jdbc/myconn</res-ref-name>,
+     - 서블릿의 (DataSource)context.lookup("java:comp/env/jdbc/myconn");
+     - 부분이 일치하기만 하면 됨
+     - acorn은 DB이름 (mysql에서 use acorn;을 먼저 실행할 것)
     ```
     <?xml version="1.0" encoding="UTF-8"?>
     
@@ -71,7 +72,7 @@ category: etc
     </web-app>
     ```
 5. Project Explorer(자신의 프로젝트리스트가 있는 탭)의 아래쪽에 Servers 클릭
-  1. META-INF - Context.xml의 내용을 Servers - Tomcat v8.5 Server at localhost-config - context.xml에 붙여넣는다.
+   - META-INF - Context.xml의 내용을 Servers - Tomcat v8.5 Server at localhost-config - context.xml에 붙여넣는다.
     ```
     <?xml version="1.0" encoding="UTF-8"?>
     <!--
@@ -112,7 +113,7 @@ category: etc
     </Context>
     ```
 6. terminal
-  1. sudo nano /etc/environment
+   - sudo nano /etc/environment
     ```
     CLASSPATH=$CLASSPATH:/usr/local/tomcat/lib/servlet-api.jar:/usr/local/tomcat/lib/jsp-api.jar:/usr/local/tomcat/lib/mysql-connector-java-5.1.38.jar
     ```
