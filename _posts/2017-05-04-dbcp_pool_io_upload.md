@@ -135,8 +135,8 @@ category: etc
 
 ## IO, UPLOAD 설정
 
+### 설정
 
-설정
 1. 자신의 프로젝트 이름(dynamic web project) - 우클릭 - properties - java build path
    - add external jars
       - mysql-connector-java.jar (위치: /usr/share/java)
