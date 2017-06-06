@@ -125,10 +125,10 @@ category: etc
 <p align="center">프로젝트 build path에 추가된 external jars</p>
 <p align="center">사진 좌측 하단에 조금 잘렸는데, 저기에 context.xml이 있다</p>
 
-![사진[({{ site.baseurl }}/images/dbcp_pool_io_upload_2.png)
+![사진]({{ site.baseurl }}/images/dbcp_pool_io_upload_2.png)
 <p align="center">WEB-INF &rarr; lib에 import된 jar파일들</p>
 
-![사진[({{ site.baseurl }}/images/dbcp_pool_io_upload_3.png)
+![사진]({{ site.baseurl }}/images/dbcp_pool_io_upload_3.png)
 <p align="center">프로젝트 전체 구조</p>
 
 ---
@@ -156,5 +156,5 @@ category: etc
     export CLASSPATH
     ```
 4. sudo nano ~/.bashrc는 설정안함
-![사진[({{ site.baseurl }}/images/dbcp_pool_io_upload_4.png)
+![사진]({{ site.baseurl }}/images/dbcp_pool_io_upload_4.png)
 <p align="center">전체 프로젝트 구조</p>
