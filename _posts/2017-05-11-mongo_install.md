@@ -66,17 +66,17 @@ $ mongo
 4. cmd를 하나 더 열고 `mongo`를 입력한다  
    ```
    C:\Program Files\MongoDB\Server\3.4\bin> mongo
-   ```  
+   ```
    
-   - 메세지가 출력되고 mongo가 실행된다
+   - 메세지가 출력되고 mongo가 실행된다.
 
    > MongoDB shell version v3.4.3  
    > connecting to: mongodb://127.0.0.1:27017  
    > MongoDB server version: 3.4.3  
    > Server has startup warnings:  
    > 2017-04-03T10:52:18.443+0900 I CONTROL [initandlisten]  
-   > 2017-04-03T10:52:18.443+0900 I CONTROL [initandlisten] ** WARNING: Access contr ol is not enabled for the database.  
-   > 2017-04-03T10:52:18.446+0900 I CONTROL [initandlisten] ** Read and wri te access to data and configuration is unrestricted.
+   > 2017-04-03T10:52:18.443+0900 I CONTROL [initandlisten] \** WARNING: Access contr ol is not enabled for the database.  
+   > 2017-04-03T10:52:18.446+0900 I CONTROL [initandlisten] \** Read and wri te access to data and configuration is unrestricted.
    > 2017-04-03T10:52:18.447+0900 I CONTROL [initandlisten]  
    > 2017-04-03T10:52:18.449+0900 I CONTROL [initandlisten] Hotfix KB2731284 or late r update is not installed, will zero-out data files.  
    > 2017-04-03T10:52:18.453+0900 I CONTROL [initandlisten]  
