@@ -61,9 +61,10 @@ $ mongo
    
    - 입력하면 아래의 메세지가 출력이 된다.
 
-   > 2017-04-03T10:28:37.234+0900 I NETWORK [thread1] waiting for connections on port 27017
+   > 2017-04-03T10:28:37.234+0900 I NETWORK [thread1] waiting for connections on port 27017  
 
 4. cmd를 하나 더 열고 `mongo`를 입력하여 MongoDB를 실행한다  
+
    ```
     C:\Program Files\MongoDB\Server\3.4\bin> mongo
    ```
