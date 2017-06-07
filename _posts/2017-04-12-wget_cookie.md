@@ -1,7 +1,7 @@
 ---
 layout: post
 title: wget 관련 - tar -vxzf 오류 발생할 때
-category: Linux
+category: Ubuntu
 ---
 
 wget으로 받은 java파일을 tar -vxzf하려고 할 때
