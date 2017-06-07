@@ -1,7 +1,7 @@
 ---
 layout: post
 title: plank-dock 설치
-category: Linux
+category: Ubuntu
 ---
 ![_config.yml]({{ site.baseurl }}/images/plank_dock.png)
 ```
