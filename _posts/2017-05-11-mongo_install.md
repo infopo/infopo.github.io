@@ -64,7 +64,6 @@ $ mongo
    > 2017-04-03T10:28:37.234+0900 I NETWORK [thread1] waiting for connections on port 27017  
 
 4. cmd를 하나 더 열고 `mongo`를 입력한다   
-   
    ```
    C:\Program Files\MongoDB\Server\3.4\bin> mongo  
    ```  
@@ -81,4 +80,4 @@ $ mongo
    > 2017-04-03T10:52:18.447+0900 I CONTROL [initandlisten]  
    > 2017-04-03T10:52:18.449+0900 I CONTROL [initandlisten] Hotfix KB2731284 or late r update is not installed, will zero-out data files.  
    > 2017-04-03T10:52:18.453+0900 I CONTROL [initandlisten]  
-   > >  
+   > \>  
