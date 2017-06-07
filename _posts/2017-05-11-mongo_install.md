@@ -68,7 +68,7 @@ $ mongo
    C:\Program Files\MongoDB\Server\3.4\bin> mongo
    ```  
    
-   - 메세지가 출력되고 mongo가 실행된다  
+   - 메세지가 출력되고 mongo가 실행된다
 
    > MongoDB shell version v3.4.3  
    > connecting to: mongodb://127.0.0.1:27017  
