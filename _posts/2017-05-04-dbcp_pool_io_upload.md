@@ -1,6 +1,6 @@
 ---
 layout: post
-title: tomcat DBCP, POOL, IO, UPLOAD 설정 (우분투)
+title: tomcat DBCP, POOL, IO, UPLOAD 설정
 category: etc
 ---
 
