@@ -59,23 +59,22 @@ $ mongo
     C:\Program Files\MongoDB\Server\3.4\bin> mongod --dbpath C:\mongodb\data\db
    ```
    
-   - 입력하면  
+   - 입력하면 아래의 메세지가 출력이 된다.
 
-> 2017-04-03T10:28:37.234+0900 I NETWORK [thread1] waiting for connections on port 27017
+   > 2017-04-03T10:28:37.234+0900 I NETWORK [thread1] waiting for connections on port 27017
 
 4. cmd를 하나 더 열고 `mongo`를 입력하여 MongoDB를 실행한다
    ```
     C:\Program Files\MongoDB\Server\3.4\bin> mongo
    ```
-> MongoDB shell version v3.4.3
-> connecting to: mongodb://127.0.0.1:27017
-> MongoDB server version: 3.4.3
-> Server has startup warnings:
-> 2017-04-03T10:52:18.443+0900 I CONTROL [initandlisten]
-> 2017-04-03T10:52:18.443+0900 I CONTROL [initandlisten] ** WARNING: Access contr ol is not enabled for the database.
+> MongoDB shell version v3.4.3  
+> connecting to: mongodb://127.0.0.1:27017  
+> MongoDB server version: 3.4.3  
+> Server has startup warnings:  
+> 2017-04-03T10:52:18.443+0900 I CONTROL [initandlisten]  
+> 2017-04-03T10:52:18.443+0900 I CONTROL [initandlisten] ** WARNING: Access contr ol is not enabled for the database.  
 > 2017-04-03T10:52:18.446+0900 I CONTROL [initandlisten] ** Read and wri te access to data and configuration is unrestricted.
-> 2017-04-03T10:52:18.447+0900 I CONTROL [initandlisten]
-> 2017-04-03T10:52:18.449+0900 I CONTROL [initandlisten] Hotfix KB2731284 or late r update is not installed, will zero-out data files.
-> 2017-04-03T10:52:18.453+0900 I CONTROL [initandlisten]
-> >
-이렇게 하면 실행 완료
+> 2017-04-03T10:52:18.447+0900 I CONTROL [initandlisten]  
+> 2017-04-03T10:52:18.449+0900 I CONTROL [initandlisten] Hotfix KB2731284 or late r update is not installed, will zero-out data files.  
+> 2017-04-03T10:52:18.453+0900 I CONTROL [initandlisten]  
+> >  
