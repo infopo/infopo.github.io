@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Node.js 설치 (우분투)
+title: Node.js 설치
 category: etc
 ---
 
