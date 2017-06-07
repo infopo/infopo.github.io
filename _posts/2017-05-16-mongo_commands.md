@@ -174,7 +174,6 @@ getdata()
 ///'아저씨'가 kor_title인 document의 내용을 모두 출력한다
 > db.moviedata.find({kor_title:'아저씨'})
 
-
 ///'아저씨'가 kor_title인 document에서 kor_title만 출력
 > db.moviedata.find({kor_title:'아저씨'}, {kor_title:1})
 { "_id" : ObjectId("58e080c337533218e2bb738a"), "kor_title" : "아저씨" }
@@ -197,10 +196,10 @@ getdata()
 ```
 ///현재 디렉토리 위치에 newdbexport.json이 생긴다
 $ sudo mongoexport --db newdb -c restaurants --out newdbexport.json
+```
 
 ---
 
-```
 ## import
 ```
 $ sudo mongoimport --db test -c abc --file /home/jw/documents/output.json
@@ -221,7 +220,6 @@ $ sudo mongoimport --db test -c abc --file /home/jw/documents/output.json
 ```
 ///맨 뒤에서부터 4개의 document를 출력
 > db.컬렉션이름.find().sort({_id:-1}).limit(4)
-
 ```
 
 ---
@@ -241,5 +239,4 @@ $ sudo mongoimport --db test -c abc --file /home/jw/documents/output.json
 
 ///mb단위
 > db.콜렉션이름.stats(1024 * 1024)
-
 ```
