@@ -17,6 +17,9 @@ layout: default
   {% endfor %}
 </div> -->
 
+<!-- blog를 처음 들어왔을 때 보이는 화면 -->
+
+<!-- 페이지당 5개씩 포스트가 보이게 설정 -->
 {% for post in paginator.posts %}
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 <!--         <p class="author">
@@ -31,16 +34,21 @@ layout: default
 
     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 {% endfor %}
+
 <br>
 <br>
+
+<!-- 페이지 넘어가는 버튼 -->
 {% if paginator.total_pages > 1 %}  
 <div class="pagination" align="center">  
+  <!-- 이전 페이지 이동 -->
   {% if paginator.previous_page %}  
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>  
   {% else %}  
     <span>&laquo; Prev</span>  
   {% endif %}  
   
+  <!-- 특정 페이지 이동 -->
   {% for page in (1..paginator.total_pages) %}  
     {% if page == paginator.page %}  
       <em>{{ page }}</em>  
@@ -51,6 +59,7 @@ layout: default
     {% endif %}  
   {% endfor %}  
   
+  <!-- 다음 페이지 이동 -->
   {% if paginator.next_page %}  
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>  
   {% else %}  
