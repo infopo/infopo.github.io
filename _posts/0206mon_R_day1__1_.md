@@ -1,3 +1,10 @@
+---
+layout: post
+title: R - 17/02/06
+category: acorn수업
+---
+
+
 ``` r
 LETTERS
 ```
