@@ -1,0 +1,239 @@
+    LETTERS
+
+    ##  [1] "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q"
+    ## [18] "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
+
+    letters
+
+    ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q"
+    ## [18] "r" "s" "t" "u" "v" "w" "x" "y" "z"
+
+    month.abb
+
+    ##  [1] "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov"
+    ## [12] "Dec"
+
+    month.name
+
+    ##  [1] "January"   "February"  "March"     "April"     "May"      
+    ##  [6] "June"      "July"      "August"    "September" "October"  
+    ## [11] "November"  "December"
+
+    pi
+
+    ## [1] 3.141593
+
+    1 / 0
+
+    ## [1] Inf
+
+    vector(length = 4)
+
+    ## [1] FALSE FALSE FALSE FALSE
+
+    vector(mode = "numeric", length = 4)
+
+    ## [1] 0 0 0 0
+
+    vector(mode = "character", length = 4)
+
+    ## [1] "" "" "" ""
+
+    x <- 1:10
+    x
+
+    ##  [1]  1  2  3  4  5  6  7  8  9 10
+
+    names(x) <- letters[1:10]
+    names(x)
+
+    ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j"
+
+    x
+
+    ##  a  b  c  d  e  f  g  h  i  j 
+    ##  1  2  3  4  5  6  7  8  9 10
+
+    y = 11:20
+    y
+
+    ##  [1] 11 12 13 14 15 16 17 18 19 20
+
+    a <- 10
+    a
+
+    ## [1] 10
+
+    rm(list = ls())
+
+    c(1:4) ^ c(1:2)
+
+    ## [1]  1  4  3 16
+
+    (9:11) -c(4,6)
+
+    ## Warning in (9:11) - c(4, 6): longer object length is not a multiple of
+    ## shorter object length
+
+    ## [1] 5 4 7
+
+    -3 %% 3
+
+    ## [1] 0
+
+    -2 %/% 3
+
+    ## [1] -1
+
+    # ?? ????
+    # ?????��?????
+
+    matrix(1:4, nrow=2, ncol=2, byrow = "TRUE")
+
+    ##      [,1] [,2]
+    ## [1,]    1    2
+    ## [2,]    3    4
+
+    a <- matrix(data=1:4, nrow=2, ncol=2, byrow="TRUE", dimnames = list(c("asdf","Asdf"), c("333", "555")))
+    a
+
+    ##      333 555
+    ## asdf   1   2
+    ## Asdf   3   4
+
+    dim(a)
+
+    ## [1] 2 2
+
+    mode(a)
+
+    ## [1] "numeric"
+
+    x <- c(2, 3, 4)
+    y <- LETTERS[1:3]
+    df1 <- data.frame(x, y)
+    df1
+
+    ##   x y
+    ## 1 2 A
+    ## 2 3 B
+    ## 3 4 C
+
+    df1$x
+
+    ## [1] 2 3 4
+
+    df1$y
+
+    ## [1] A B C
+    ## Levels: A B C
+
+    df1$z = c(pi, sqrt(2), 2.71828)
+    df1
+
+    ##   x y        z
+    ## 1 2 A 3.141593
+    ## 2 3 B 1.414214
+    ## 3 4 C 2.718280
+
+    df1$x <- NULL
+    df1
+
+    ##   y        z
+    ## 1 A 3.141593
+    ## 2 B 1.414214
+    ## 3 C 2.718280
+
+    df1$x <- x
+    df1
+
+    ##   y        z x
+    ## 1 A 3.141593 2
+    ## 2 B 1.414214 3
+    ## 3 C 2.718280 4
+
+    dim(df1)
+
+    ## [1] 3 3
+
+    colnames(df1)
+
+    ## [1] "y" "z" "x"
+
+    row.names(df1)
+
+    ## [1] "1" "2" "3"
+
+    colnames(df1) <- LETTERS[1:3]
+    df1
+
+    ##   A        B C
+    ## 1 A 3.141593 2
+    ## 2 B 1.414214 3
+    ## 3 C 2.718280 4
+
+    data(iris)
+
+    head(iris)
+
+    ##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+    ## 1          5.1         3.5          1.4         0.2  setosa
+    ## 2          4.9         3.0          1.4         0.2  setosa
+    ## 3          4.7         3.2          1.3         0.2  setosa
+    ## 4          4.6         3.1          1.5         0.2  setosa
+    ## 5          5.0         3.6          1.4         0.2  setosa
+    ## 6          5.4         3.9          1.7         0.4  setosa
+
+    str(iris)
+
+    ## 'data.frame':    150 obs. of  5 variables:
+    ##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+    ##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+    ##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+    ##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+    ##  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
+
+    #????????????????
+
+    iris$Species
+
+    ##   [1] setosa     setosa     setosa     setosa     setosa     setosa    
+    ##   [7] setosa     setosa     setosa     setosa     setosa     setosa    
+    ##  [13] setosa     setosa     setosa     setosa     setosa     setosa    
+    ##  [19] setosa     setosa     setosa     setosa     setosa     setosa    
+    ##  [25] setosa     setosa     setosa     setosa     setosa     setosa    
+    ##  [31] setosa     setosa     setosa     setosa     setosa     setosa    
+    ##  [37] setosa     setosa     setosa     setosa     setosa     setosa    
+    ##  [43] setosa     setosa     setosa     setosa     setosa     setosa    
+    ##  [49] setosa     setosa     versicolor versicolor versicolor versicolor
+    ##  [55] versicolor versicolor versicolor versicolor versicolor versicolor
+    ##  [61] versicolor versicolor versicolor versicolor versicolor versicolor
+    ##  [67] versicolor versicolor versicolor versicolor versicolor versicolor
+    ##  [73] versicolor versicolor versicolor versicolor versicolor versicolor
+    ##  [79] versicolor versicolor versicolor versicolor versicolor versicolor
+    ##  [85] versicolor versicolor versicolor versicolor versicolor versicolor
+    ##  [91] versicolor versicolor versicolor versicolor versicolor versicolor
+    ##  [97] versicolor versicolor versicolor versicolor virginica  virginica 
+    ## [103] virginica  virginica  virginica  virginica  virginica  virginica 
+    ## [109] virginica  virginica  virginica  virginica  virginica  virginica 
+    ## [115] virginica  virginica  virginica  virginica  virginica  virginica 
+    ## [121] virginica  virginica  virginica  virginica  virginica  virginica 
+    ## [127] virginica  virginica  virginica  virginica  virginica  virginica 
+    ## [133] virginica  virginica  virginica  virginica  virginica  virginica 
+    ## [139] virginica  virginica  virginica  virginica  virginica  virginica 
+    ## [145] virginica  virginica  virginica  virginica  virginica  virginica 
+    ## Levels: setosa versicolor virginica
+
+    iris[1:10, c("Sepal.Length", "Petal.Length")]
+
+    ##    Sepal.Length Petal.Length
+    ## 1           5.1          1.4
+    ## 2           4.9          1.4
+    ## 3           4.7          1.3
+    ## 4           4.6          1.5
+    ## 5           5.0          1.4
+    ## 6           5.4          1.7
+    ## 7           4.6          1.4
+    ## 8           5.0          1.5
+    ## 9           4.4          1.4
+    ## 10          4.9          1.5
