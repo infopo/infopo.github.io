@@ -16,7 +16,7 @@ category: Git
 
 ## 2. `push`된 경우
 
-1. git rebase -i HEAD~3
+1. `$ git rebase -i HEAD~3`
 
     1. 숫자3은 보여질 최근 commit message의 개수를 의미합니다.(6으로 변경시 최근 6개의 메세지가 출력됩니다.)
 
