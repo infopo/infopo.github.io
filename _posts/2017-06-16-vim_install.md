@@ -49,7 +49,7 @@ category: Ubuntu
     `vim`을 실행하고, `:PluginInstall`로 Vundle을 설치하면 됩니다.
 
 
-## 추가 플러그인 설치
+## AutoComplPop, The-NERD-tree, taglist-plus 플러그인 설치
 
 아래의 내용을 `vimrc`에 추가합니다
 ```vim
@@ -88,6 +88,17 @@ autocmd BufWinEnter * NERDTreeMirror
 ```
 
 아까와 동일하게 `:PluginInstall`로 설치합니다.
+
+## auto-pairs, toggle_mouse 플러그인 설치
+```
+$ git clone https://github.com/jiangmiao/auto-pairs
+$ git clone https://github.com/nvie/vim-togglemouse
+```
+받은 파일 중에서 `toggle_mouse.vim`과 `auto-pairs.vim`을 `~/.vim/plugin`아래에 옮깁니다. (만약 해당 디렉토리가 없으면 생성해주면 됩니다.)  
+
+`auto-pairs`는 괄호를 자동으로 닫아주는 기능을 합니다.  
+
+`toggle_mouse`는 f12를 눌러 활성화/비활성화 시킵니다. `Mouse is for terminal`상태에서는 본문을 한 화면밖에 드래그할 수 없지만, `Mouse if for Vim (a)`상태에서는 한 화면 이상 드래그가 가능해집니다.  
 
 ## 기타 설정
 
@@ -152,5 +163,4 @@ set ic
 set hls
 set lbr
 set autoindent
-
 ```
