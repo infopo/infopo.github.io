@@ -13,11 +13,12 @@ from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure
 ```
 
+<br>
 
 ```python
 def main():
     try:
-        c = MongoClient(host="121.129.22.5", port=27017)
+        c = MongoClient(host="IP_주소", port=27017)
         print(c.test.fromlenovo.insert_one({'eng_title': '2000', 'kor_title': 'fadfasdfsadf', 'movie_id': 11111}))
         print ('connected successfully')
         print (c)
@@ -31,4 +32,4 @@ if __name__ == '__main__':
 
     <pymongo.results.InsertOneResult object at 0x7f25f063d3f0>
     connected successfully
-    MongoClient(host=['121.129.22.5:27017'], document_class=dict, tz_aware=False, connect=True)
+    MongoClient(host=['IP_주소:27017'], document_class=dict, tz_aware=False, connect=True)

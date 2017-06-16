@@ -11,6 +11,7 @@ category: Python
 from numpy.random import normal
 ```
 
+<br>
 
 ```python
 import pandas as pd
@@ -18,12 +19,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
+<br>
 
 ```python
 # 정규분포를 따르지 않는 일반적인 난수
 non_norm_height = np.random.randint(170, 180, 20)
 ```
 
+<br>
 
 ```python
 mu = 175
@@ -80,7 +83,7 @@ dfh.head()
 </div>
 
 
-
+<br>
 
 ```python
 sum(dfh.prob)
@@ -92,7 +95,7 @@ sum(dfh.prob)
     2.061306283935028
 
 
-
+<br>
 
 ```python
 # 아래에서는 plt. 에서 바로 subplots를 생성했다
@@ -106,9 +109,9 @@ plt.show()
 ```
 
 
-![png](normal_dist_sum_files/normal_dist_sum_6_0.png)
+![png]({{ site.baseurl }} /images/normal_dist_sum_files/normal_dist_sum_6_0.png)
 
-
+<br>
 
 ```python
 fig, ax = plt.subplots(1, 1)
@@ -121,8 +124,9 @@ plt.show()
 ```
 
 
-![png](normal_dist_sum_files/normal_dist_sum_7_0.png)
+![png]({{ site.baseurl }} /images/normal_dist_sum_files/normal_dist_sum_7_0.png)
 
+<br>
 
 ## scipy 사용
 
@@ -133,6 +137,7 @@ https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html
 from scipy.stats import norm
 ```
 
+<br>
 
 ```python
 est = norm(loc=mu, scale=np.sqrt(var))
@@ -156,7 +161,7 @@ np.sort(dfh.height)
             179.36408737,  180.60392868,  182.7560728 ,  183.27147727])
 
 
-
+<br>
 
 ```python
 # ppf -> Percent point function, numpy.linspace 사용
@@ -173,7 +178,7 @@ np.linspace(est.ppf(0.001), est.ppf(0.999), 20)
             179.22873895,  179.87931417,  180.52988939,  181.18046461])
 
 
-
+<br>
 
 ```python
 # ppf, arange 사용
@@ -189,7 +194,7 @@ np.arange(est.ppf(0.001), est.ppf(0.999))
             180.81953539])
 
 
-
+<br>
 
 ```python
 # p=0.75일 때, x값(z값)?
@@ -217,7 +222,7 @@ est.cdf(175)
     0.5
 
 
-
+<br>
 
 ```python
 np.round(est.cdf(np.sort(dfh.height)), 3)
@@ -231,7 +236,7 @@ np.round(est.cdf(np.sort(dfh.height)), 3)
             0.961,  0.978,  0.987,  0.999])
 
 
-
+<br>
 
 ```python
 plt.plot(np.arange(20), np.sort(est.cdf(dfh.height)))
@@ -239,7 +244,7 @@ plt.show()
 ```
 
 
-![png](normal_dist_sum_files/normal_dist_sum_20_0.png)
+![png]({{ site.baseurl }} /images/normal_dist_sum_files/normal_dist_sum_20_0.png)
 
 
 #### pdf
@@ -259,7 +264,7 @@ est.pdf(dfh.height)
             0.17921847,  0.11911357,  0.09446537,  0.04225614,  0.15478825,
             0.01621514,  0.00147486,  0.08675775,  0.19478843,  0.16748473])
 
-
+<br>
 
 
 ```python
@@ -322,7 +327,7 @@ norm.rvs(175, 4, 10)
             180.02436536,  178.45060004])
 
 
-
+<br>
 
 ```python
 np.random.normal(175, 4, 10)
