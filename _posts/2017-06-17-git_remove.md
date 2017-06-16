@@ -37,12 +37,12 @@ To https://github.com/jongwoo315/asdf.git
 $ git rm asdfasdf.txt
 ```
 
-folder 통채로 삭제하려면 -r 추가하면 됩니다.
+만약, folder 통채로 삭제하고자 한다면 `-r`을 추가하면 됩니다.
 ```
 $ git rm -r work_directory
 ```
 
 ```
 $ git reset
-$ git checkout -- work_directory
+$ git checkout --
 ```

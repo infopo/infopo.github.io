@@ -298,7 +298,7 @@ nav {
   // 내가 새로 추가한 부분 - post내의 폰트 크기 조정 (_layouts/post.html)
   // post아래에 class=entry가 post의 크기를 결정
   .entry {
-    font-size: 15px; // <p>와 동일한 크기로 설정함
+    font-size: 17px; // 처음 생성시 15px였음
   }
 
   // > 로 시작하는 부분 폰트
@@ -307,7 +307,7 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 15px; //원래 22px였음
+    font-size: 17px; // 맨처음 22px -> 15px -> 17px
     font-style: italic;
   }
 
