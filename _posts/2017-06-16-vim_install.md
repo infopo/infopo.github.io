@@ -98,7 +98,7 @@ $ git clone https://github.com/nvie/vim-togglemouse
 
 `auto-pairs`는 괄호를 자동으로 닫아주는 기능을 합니다.  
 
-`toggle_mouse`는 f12를 눌러 활성화/비활성화 시킵니다. `Mouse is for terminal`상태에서는 본문을 한 화면밖에 드래그할 수 없지만, `Mouse if for Vim (a)`상태에서는 한 화면 이상 드래그가 가능해집니다.  
+`toggle_mouse`는 `f12`를 눌러 활성화/비활성화 시킵니다. `Mouse is for terminal`상태에서는 본문을 한 화면밖에 드래그할 수 없지만, `Mouse if for Vim (a)`상태에서는 한 화면 이상 드래그가 가능해집니다.  
 
 ## 기타 설정
 
