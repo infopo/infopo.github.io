@@ -5,7 +5,7 @@ category: DB
 ---
 
 ## database 생성
-```
+```js
 > use hahaha
 이렇게 하면 생성완료
 show dbs를 하면 보이지는 않는다.
@@ -20,7 +20,7 @@ show dbs를 하면 보이지는 않는다.
 ---
 
 ## database 삭제
-```
+```js
 > use naver_movie
 > show tables
 
@@ -31,7 +31,7 @@ show dbs를 하면 보이지는 않는다.
 ---
 
 ## collections 삭제
-```
+```js
 > use naver_movie
 > show tables
 moviedata
@@ -48,7 +48,7 @@ true
 ## documents 삭제
 ### _id에 따라 document(행)를 삭제
 
-```
+```js
 > db.moviedata.find()
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f3"), "gen" : [ "한국" ] }
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f4"), "gen" : [ "한국" ] }
@@ -57,11 +57,11 @@ true
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f7"), "gen" : [ "드라마", "에로" ] }
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f8"), "gen" : [ "한국" ] }
 ```
-```
+```js
 > db.moviedata.remove({'_id':ObjectId("58d0e0b63753322bb4b8c2f8")})
 WriteResult({ "nRemoved" : 1 })
 ```
-```
+```js
 > db.moviedata.find()
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f3"), "gen" : [ "한국" ] }
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f4"), "gen" : [ "한국" ] }
@@ -71,7 +71,7 @@ WriteResult({ "nRemoved" : 1 })
 ```
 
 ### 특정 조건에 따라 삭제 해당 document(행)를 삭제
-```
+```js
 > db.moviedata.find()
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f3"), "gen" : [ "한국" ] }
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f4"), "gen" : [ "한국" ] }
@@ -79,7 +79,7 @@ WriteResult({ "nRemoved" : 1 })
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f6"), "gen" : [ "한국" ] }
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f7"), "gen" : [ "드라마", "에로" ] }
 ```
-```
+```js
 ///mongodb
 > db.moviedata.deleteMany({'gen':['한국']})
 { "acknowledged" : true, "deletedCount" : 4 }
@@ -87,7 +87,7 @@ WriteResult({ "nRemoved" : 1 })
 > db.moviedata.find()
 { "_id" : ObjectId("58d0e0b63753322bb4b8c2f7"), "gen" : [ "드라마", "에로" ] }
 ```
-```
+```python
 ///pymongo (한국 밖에 []가 없다!!)
 >>> c = MongoClient()
 >>> c.naver_movie.moviedata.delete_many({'gen':'한국'})
@@ -98,7 +98,7 @@ WriteResult({ "nRemoved" : 1 })
 ## collection의 특정 필드만 삭제 (document는 그대로 있음)  
 [참고사이트](http://stackoverflow.com/questions/22901788/remove-attribute-from-all-mongodb-documents-using-python-and-pymongo){:target="_blank"}  
 
-```
+```js
 ///comment_count라는 필드 자체만 document에서 삭제하고 싶을 때
 
 ///mongodb
@@ -116,7 +116,7 @@ WriteResult({ "nRemoved" : 1 })
 특정 필드의 값을 변경하기  
 kor_title값을 '집으로...'에서 '집으로'로 변경하기  
 
-```
+```js
 db.moviedata.update({"_id" : ObjectId("58df83aa3753324ee0587337")}, {$set:{'kor_title':'집으로'}})
 ```
 
@@ -125,7 +125,7 @@ db.moviedata.update({"_id" : ObjectId("58df83aa3753324ee0587337")}, {$set:{'kor_
 ## field 추가
 [참고사이트](http://stackoverflow.com/questions/7714216/add-new-field-to-a-collection-in-mongodb){:target="_blank"}
 
-```
+```js
 > db.moviedata.find()
 { "_id" : ObjectId("58d0d3163753322bb4b8c2db"), "kor_title" : "꿩먹고 알먹고", "movie_id" : 20030 }
 { "_id" : ObjectId("58d0d3163753322bb4b8c2dc"), "kor_title" : "끊어진 항로", "movie_id" : 20031 }
@@ -144,7 +144,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 ## find()
 ### 특정 필드의 값들만 출력하기
-```
+```js
 ///MongoDB
 ///_id는 출력하지 말고, kor_title, comment만 출력하기
 > db.moviedata.find({}, {kor_title:1, comment:1, _id:0})
@@ -155,7 +155,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 { "kor_title" : "끼있는 여자는 밤이슬을 좋아한다", "comment" : { "wood****" : 1 } }
 { "kor_title" : "나", "comment" : { "가리(rkfh****)" : 1, "kdg0****" : 1, "최강기아(shin****)" : 1, "msn1****" : 10, "vlf1****
 ```
-```
+```python
 ///pymongo
 c = MongoClient(host='localhost', port=27017)
 
@@ -170,7 +170,7 @@ getdata()
 
 ### 조건에 따라 찾기1
 
-```
+```js
 ///'아저씨'가 kor_title인 document의 내용을 모두 출력한다
 > db.moviedata.find({kor_title:'아저씨'})
 
@@ -209,7 +209,7 @@ $ sudo mongoimport --db test -c abc --file /home/jw/documents/output.json
 
 ## collections의 field명만 출력
 
-```
+```js
 ///comment_table collections의 field명들만
 > Object.keys(db.comment_table.findOne())
 ```
@@ -217,7 +217,7 @@ $ sudo mongoimport --db test -c abc --file /home/jw/documents/output.json
 ---
 
 ## collections 정렬
-```
+```js
 ///맨 뒤에서부터 4개의 document를 출력
 > db.컬렉션이름.find().sort({_id:-1}).limit(4)
 ```
@@ -225,7 +225,7 @@ $ sudo mongoimport --db test -c abc --file /home/jw/documents/output.json
 ---
 
 ## collection내의 document 숫자 세기
-```
+```js
 ///moviedata collection의 document 갯수
 > db.moviedata.count()
 ```
@@ -233,7 +233,7 @@ $ sudo mongoimport --db test -c abc --file /home/jw/documents/output.json
 ---
 
 ## collection 크기 확인
-```
+```js
 ///kb단위
 > db.콜렉션이름.stats(1024)
 
