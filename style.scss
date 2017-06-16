@@ -113,7 +113,7 @@ img {
   max-width: 100%;
 }
 
-// table관련 css 추가 (17/05/28)
+///////////////////////////// table관련 css 추가 (17/05/28) /////////////////////////////
 // table{
 //     border-collapse: collapse;
 //     border-spacing: 0;
@@ -144,7 +144,7 @@ th, td {
 
 tr:nth-child(even) {background-color: #f2f2f2}
 
-// table관련 css 추가 끝
+///////////////////////////// table관련 css 추가 끝 /////////////////////////////
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
@@ -295,16 +295,16 @@ nav {
 
 .post {
   .entry {
-    font-size: 15px; 
+    font-size: 10px;
   }
 
+  // > 로 시작하는 부분 폰트
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    //font-size: 22px;
-    font-size: 10px;
+    font-size: 22px;
     font-style: italic;
   }
 
