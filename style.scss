@@ -303,9 +303,17 @@ nav {
 
   // > 로 시작하는 부분 폰트
   blockquote {
-    margin: 1.8em .8em;
+    // margin: set the size of the white space outside the border.
+    //margin: 1.8em .8em; // 상하여백, 좌우여백
+    margin: 1.3em .8em;
+
     border-left: 2px solid $gray;
-    padding: 0.1em 1em;
+
+    // padding: clears an area inside the border of an element.
+    // padding -> 0.1em은 상하의 여백, 1em은 좌우 여백
+    //padding: 0.1em 1em;
+    padding: 0.05em 1em;
+
     color: $gray;
     font-size: 17px; // 맨처음 22px -> 15px -> 17px
     font-style: italic;
