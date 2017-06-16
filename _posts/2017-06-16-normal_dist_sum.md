@@ -130,7 +130,7 @@ plt.show()
 
 ## scipy 사용
 
-https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html
+[scipy.stats.norm document](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html){:target="_blank"}
 
 
 ```python
