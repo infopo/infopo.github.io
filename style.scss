@@ -294,8 +294,11 @@ nav {
 }
 
 .post {
+
+  // 내가 새로 추가한 부분 - post내의 폰트 크기 조정 (_layouts/post.html)
+  // post아래에 class=entry가 post의 크기를 결정
   .entry {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   // > 로 시작하는 부분 폰트
@@ -304,7 +307,7 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 16px;
     font-style: italic;
   }
 
