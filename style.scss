@@ -305,14 +305,14 @@ nav {
   blockquote {
     // margin: set the size of the white space outside the border.
     //margin: 1.8em .8em; // 상하여백, 좌우여백
-    margin: 1em .8em;
+    margin: 0.8em .8em;
 
     border-left: 2px solid $gray;
 
     // padding: clears an area inside the border of an element.
     // padding -> 0.1em은 상하의 여백, 1em은 좌우 여백
     //padding: 0.1em 1em;
-    padding: 0.00001em 1em;
+    padding: 0.0001em 1em;
 
     color: $gray;
     font-size: 17px; // 맨처음 22px -> 15px -> 17px
