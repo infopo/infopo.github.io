@@ -14,8 +14,7 @@
 /**************/
 
 html {
-  //font-size: 100%;
-  font-size: 40%;
+  font-size: 100%;
 }
 
 body {
@@ -300,7 +299,8 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    //font-size: 22px;
+    font-size: 10px;
     font-style: italic;
   }
 
