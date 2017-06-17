@@ -23,31 +23,31 @@ $ jupyter Lab
 
 첫 화면입니다. Notebook과 다르게 좌측에 탭이 새로 생겼습니다. 홈 디렉토리를 Tree View로 볼 수도 있고, 명령어와 실행 중인 파일들을 볼 수도 있습니다. 탭을 한 번 더 클릭하면 최소화시킬 수도 있습니다. IDE와 같은 모습을 갖추게 된 것 같습니다.
 
-[]({{ site.baseurl }}/images/jupyter_lab_1.png)
+![]({{ site.baseurl }}/images/jupyter_lab_1.png)
 
 <br>
 
 여러 개의 파일들을 실행한 화면입니다. Notebook에서는 웹브라우저의 새탭에 파일들을 띄워야 했는데, Lab에서는 웹브라우저 내의 한 화면에 파일들을 띄우고, 현재 위치도 좌측 Tree View에서 확인할 수 있어서 훨씬 편해졌습니다.  
 
-[]({{ site.baseurl }}/images/jupyter_lab_2.png)
+![]({{ site.baseurl }}/images/jupyter_lab_2.png)
 
 <br>
 
 창 분할도 가능합니다.  
 
-[]({{ site.baseurl }}/images/jupyter_lab_3.png)
+![]({{ site.baseurl }}/images/jupyter_lab_3.png)
 
 <br>
 
 내장된 터미널도 있습니다.  
 
-[]({{ site.baseurl }}/images/jupyter_lab_4.png)
+![]({{ site.baseurl }}/images/jupyter_lab_4.png)
 
 <br>
 
 물론, 터미널에서 `jupyter notebook`을 따로 실행하지 않아도 Notebook을 실행할 수 있습니다. help 탭에서 Launch Classic Notebook을 클릭하면 됩니다.  
 
-[]({{ site.baseurl }}/images/jupyter_lab_5.png)
+![]({{ site.baseurl }}/images/jupyter_lab_5.png)
 
 ---
 

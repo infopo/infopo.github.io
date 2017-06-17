@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jupyter Notebook 설치
-category: Juypter
+category: Jupyter
 ---
 
 ## 설치
