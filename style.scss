@@ -362,5 +362,5 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
+@import "highlights";      // 코드블럭에 대한 css파일을 import. 위치: _sass/_highlights.scss // 여기에서 한줄짜리 코드블럭 배경색넣기 추가함
 @import "svg-icons";
