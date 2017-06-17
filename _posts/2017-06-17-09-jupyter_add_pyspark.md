@@ -21,6 +21,9 @@ export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.10.4-src.zip:$PYTHONPATH
 export PYSPARK_PYTHON=/usr/bin/python3
 export PYSPARK_DRIVER_PYTHON=python3
 ```
+`source`명령어로 변경내용을 적용합니다.
+
+<br>
 
 #### `/spark/conf/spark-env.sh`
 
