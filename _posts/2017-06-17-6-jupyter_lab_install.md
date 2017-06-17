@@ -55,7 +55,7 @@ $ jupyter Lab
 
 - `Tab`버튼이 기존에는 코드 들여쓰기였는데, Lab에서는 `ctrl`+`[`와 `ctrl`+`]`로 변경되었습니다.
 
-- 파일이 여러 개 열려있는 경우, `ctrl`+`shift`+`[`와 `ctrl`+`shift`+']'로 파일 간 이동이 가능합니다.
+- 파일이 여러 개 열려있는 경우, `ctrl`+`shift`+`[`와 `ctrl`+`shift`+`]`로 파일 간 이동이 가능합니다.
 
 - 아직 preview단계라서 그런지 안 되는 기능들이 있는 것 같습니다. 예를 들어, markdown cell에서 `font color`가 인식되지 않습니다.
 `### <font color='red'>abcd</p>`
