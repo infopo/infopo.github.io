@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python3 패키지 설치환경 설정
-category: Python3
+category: Python
 ---
 
 우분투는 기본적으로 Python3가 설치된 상태입니다. 이제 패키지 관리가 가능하도록 몇 가지를 설치하도록 하겠습니다. 그러기 위해서는 `pip`가 필요합니다.  
