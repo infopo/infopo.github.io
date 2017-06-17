@@ -4,9 +4,7 @@ title: Python3 kernel 추가
 category: Jupyter
 ---
 
-Python3 패키지 관리를 가능하게 해주는 `pip3`가 설치되어 있어야 합니다.  
-
-되었다면, 터미널에 아래 명령어를 입력합니다.  
+Python3 패키지 관리를 가능하게 해주는 `pip3`가 설치되어 있어야 합니다. 터미널에 아래 명령어를 입력합니다.  
 ```
 $ sudo pip3 install jupyter
 $ sudo ipython3 kernelspec install-self
