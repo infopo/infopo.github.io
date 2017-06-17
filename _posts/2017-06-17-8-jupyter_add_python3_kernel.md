@@ -10,6 +10,4 @@ $ sudo pip3 install jupyter
 $ sudo ipython3 kernelspec install-self
 ```
 
-<br>
-
 이제 `jupyter notebook`이나 `jupyter lab`을 실행하고 새 노트북 추가를 누르면 kernel 목록에서 Python3를 확인할 수 있습니다.
