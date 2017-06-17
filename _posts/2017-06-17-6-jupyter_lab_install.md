@@ -4,9 +4,9 @@ title: Jupyter Lab 설치
 category: Jupyter
 ---
 
-Jupyter Notebook을 사용하다가 Jupyter Lab이 있다는 걸 알게 되었습니다. 현재도 Notebook 대시 Lab을 이용해 파이썬 코딩을 하는데요, 설치를 해보고 간단한 소개를 하도록 하겠습니다.  
+Jupyter Notebook을 사용하다가 Jupyter Lab이 있다는 걸 알게 되었습니다. 현재도 Notebook 대신 Lab을 이용해 파이썬 코딩을 하는데요, 설치를 해보고 간단한 소개를 하도록 하겠습니다.  
 
-Jupyter Notebook이 설치가 된 상태에서 진행을 해야 합니다. 설치과정은 간단합니다.  
+Jupyter Notebook이 설치가 된 상태에서 진행을 해야 합니다. Jupyter Lab은 Jupyter Notebook의 설정들을 그대로 가져옵니다. 설치과정은 간단합니다.  
 
 ```
 $ sudo pip install jupyterlab
