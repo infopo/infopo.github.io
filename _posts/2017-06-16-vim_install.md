@@ -164,3 +164,41 @@ set hls
 set lbr
 set autoindent
 ```
+
+## 새로운 사용자 추가 후 에러 발생시
+
+새로운 사용자(eg. sparkuser)의 디렉토리에서 `vim`을 실행했을 때 이런 메세지가 뜨는 경우가 있습니다.
+```
+sparkuser@jw-Lenovo ~ $ sudo vi .bashrc
+```
+
+> Error detected while processing /usr/share/vim/vimrc:  
+line 81:  
+E117: Unknown function: vundle#begin  
+line 85:  
+E492: Not an editor command: Plugin 'gmarik/Vundle.vim'  
+line 89:  
+E492: Not an editor command: Plugin 'tpope/vim-fugitive'  
+line 91:  
+E492: Not an editor command: Plugin 'L9'  
+line 98:  
+E492: Not an editor command: Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}  
+line 103:  
+E117: Unknown function: vundle#end  
+line 119:  
+E492: Not an editor command: Plugin 'The-NERD-tree'  
+line 123:  
+E492: Not an editor command: Plugin 'AutoComplPop'  
+line 126:  
+E492: Not an editor command: Plugin 'taglist-plus'  
+line 155:  
+E185: Cannot find color scheme 'hybrid'  
+Press ENTER or type command to continue  
+
+
+이것은 기존의 `vim`설정이 새로운 사용자에게 적용이 되지 않아서 그렇습니다. 따라서 설정 파일을 복사해주면 됩니다. 최초로 `vim`설정을 했던 기존 사용자(eg. jw)로 복귀한 후 아래 명령어를 실행하면 됩니다.
+```
+sparkuser@jw-Lenovo ~ $ exit
+
+jw@jw-Lenovo ~ $ sudo cp -R .vim /home/sparkuser/
+```
