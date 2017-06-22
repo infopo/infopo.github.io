@@ -172,24 +172,24 @@ export PATH=$SPARK_HOME/bin:$PATH
 이제부터 네트워크 설정을 할 것입니다. master로 사용할 노트북(데스크탑), slave로 사용할 오렌지파이에 대한 설정이 상이하므로 주의해야 합니다. master와 slave를 구분해 아래의 내용들을 추가합니다.
 
 - `/etc/hosts` (master, slave)
-```vim
-xxx.xxx.xxx.70      # master ip주소
-xxx.xxx.xxx.101     # slave1 ip주소
-xxx.xxx.xxx.102     # slave2 ip주소
-xxx.xxx.xxx.103     # slave3 ip주소
-```
+    ```vim
+    xxx.xxx.xxx.70      # master ip주소
+    xxx.xxx.xxx.101     # slave1 ip주소
+    xxx.xxx.xxx.102     # slave2 ip주소
+    xxx.xxx.xxx.103     # slave3 ip주소
+    ```
 
 - `/etc/hosts.allow` (master)
-```vim
-sshd:xxx.xxx.xxx.70    # master ip주소
-```
+    ```vim
+    sshd:xxx.xxx.xxx.70    # master ip주소
+    ```
 
 - `/etc/ssh/sshd_config` (master)
-```vim
-RSAAuthentication yes
-PubkeyAuthentication yes
-AuthorizedKeysFile .ssh/authorized_keys
-```
+    ```vim
+    RSAAuthentication yes
+    PubkeyAuthentication yes
+    AuthorizedKeysFile .ssh/authorized_keys
+    ```
 
 - `mkdir ~/.ssh` (master, slave)
 
@@ -268,7 +268,8 @@ Spark 프로그램을 실행하는 방법입니다.
 ```
 $ $SPARK_HOME/bin/spark-shell --master spark://MASTER_IP_입력:7077
 ```
-실행이 되었다면 아래와 같은 화면이 보일 것입니다.
+실행이 되었다면 아래와 같은 화면이 보일 것입니다.  
+
 ```scala
 Spark context available as 'sc' (master = spark://MASTER_IP:7077, app id = app-20170622221837-0001).
 Spark session available as 'spark'.
@@ -285,6 +286,7 @@ Type :help for more information.
 
 scala>
 ```
+
 아래는 1~10000사이의 숫자 중에서 10보다 작은 수만 출력하는 예제입니다.
 ```scala
 scala> val data = 1 to 10000
