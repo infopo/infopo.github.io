@@ -193,47 +193,46 @@ AuthorizedKeysFile .ssh/authorized_keys
 
 - `mkdir ~/.ssh` (master, slave)
 
-
 - keygen (master)  
 
-```
-$ ssh-keygen -t rsa -P ""
-$ cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+    ```
+    $ ssh-keygen -t rsa -P ""
+    $ cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
 
-# slave ip에 해당하는 머신에 모두 실시해야 합니다.
-$ scp ~/.ssh/authorized_keys xxx.xxx.xxx.101:/home/sparkuser/.ssh/.
-$ scp ~/.ssh/authorized_keys xxx.xxx.xxx.102:/home/sparkuser/.ssh/.
-$ scp ~/.ssh/authorized_keys xxx.xxx.xxx.103:/home/sparkuser/.ssh/.
-```
+    # slave ip에 해당하는 머신에 모두 실시해야 합니다.
+    $ scp ~/.ssh/authorized_keys xxx.xxx.xxx.101:/home/sparkuser/.ssh/.
+    $ scp ~/.ssh/authorized_keys xxx.xxx.xxx.102:/home/sparkuser/.ssh/.
+    $ scp ~/.ssh/authorized_keys xxx.xxx.xxx.103:/home/sparkuser/.ssh/.
+    ```
 
 - `/spark/conf`로 이동해 `slaves.template`와 `spark-env.sh.template`의 파일명을 변경합니다. (master)  
 
-```
-$ sudo mv spark-env.sh.template spark-env.sh
-$ sudo mv slaves.template slaves
-```
+    ```
+    $ sudo mv spark-env.sh.template spark-env.sh
+    $ sudo mv slaves.template slaves
+    ```
 
 - `spark-env.sh` (master, 필요에 따라 slave에도 추가)  
-```vim
-SPARK_LOCAL_IP=xxx.xxx.xxx.70 # master ip
-SPARK_MASTER_HOST=xxx.xxx.xxx.70 # master ip
-SPARK_MASTER_PORT=7077
-SPARK_MASTER_WEBUI_PORT=8089  # tomcat 기본 포트가 8080이므로 변경합니다.
+    ```vim
+    SPARK_LOCAL_IP=xxx.xxx.xxx.70 # master ip
+    SPARK_MASTER_HOST=xxx.xxx.xxx.70 # master ip
+    SPARK_MASTER_PORT=7077
+    SPARK_MASTER_WEBUI_PORT=8089  # tomcat 기본 포트가 8080이므로 변경합니다.
 
-# master, slave 다르게 설정가능합니다. 설정하지 않으면 가용한 모든 메모리를 사용합니다. :8089에서 확인 가능합니다.
-SPARK_WORKER_MEMORY=1g
+    # master, slave 다르게 설정가능합니다. 설정하지 않으면 가용한 모든 메모리를 사용합니다. :8089에서 확인 가능합니다.
+    SPARK_WORKER_MEMORY=1g
 
-# master, slave 다르게 설정가능합니다. 설정하지마 않으면 가용한 코어를 모두 사용합니다. :8089에서 확인 가능합니다.
-SPARK_WORKER_CORES=4
-```
+    # master, slave 다르게 설정가능합니다. 설정하지마 않으면 가용한 코어를 모두 사용합니다. :8089에서 확인 가능합니다.
+    SPARK_WORKER_CORES=4
+    ```
 
 - `slaves` (master)
-```vim
-localhost  # master도 worker로 쓰고 싶다면 추가합니다
-xxx.xxx.xxx.101
-xxx.xxx.xxx.102
-xxx.xxx.xxx.103
-```
+    ```vim
+    localhost  # master도 worker로 쓰고 싶다면 추가합니다
+    xxx.xxx.xxx.101
+    xxx.xxx.xxx.102
+    xxx.xxx.xxx.103
+    ```
 
 ## 5. 실행 및 확인
 
