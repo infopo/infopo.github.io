@@ -167,7 +167,7 @@ export PATH=$SPARK_HOME/bin:$PATH
 
 저장종료하고 `source ~/.bashrc`로 변경 내용을 적용합니다. `spark-shell --version`이 spark관련 내용을 출력하면 정상적으로 설치가 된 것입니다.
 
-## 네트워크 설정
+## 4. 네트워크 설정
 
 이제부터 네트워크 설정을 할 것입니다. master로 사용할 노트북(데스크탑), slave로 사용할 오렌지파이에 대한 설정이 상이하므로 주의해야 합니다. master와 slave를 구분해 아래의 내용들을 추가합니다.
 
@@ -270,71 +270,74 @@ $ $SPARK_HOME/bin/spark-shell --master spark://MASTER_IP_입력:7077
 ```
 실행이 되었다면 아래와 같은 화면이 보일 것입니다.  
 
-```scala
-Spark context available as 'sc' (master = spark://MASTER_IP:7077, app id = app-20170622221837-0001).
-Spark session available as 'spark'.
-Welcome to
-      ____              __
-     / __/__  ___ _____/ /__
-    _\ \/ _ \/ _ `/ __/  '_/
-   /___/ .__/\_,_/_/ /_/\_\   version 2.1.0
-      /_/
+    ```scala
+    Spark context available as 'sc' (master = spark://MASTER_IP:7077, app id = app-20170622221837-0001).
+    Spark session available as 'spark'.
+    Welcome to
+          ____              __
+         / __/__  ___ _____/ /__
+        _\ \/ _ \/ _ `/ __/  '_/
+       /___/ .__/\_,_/_/ /_/\_\   version 2.1.0
+          /_/
 
-Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_111)
-Type in expressions to have them evaluated.
-Type :help for more information.
+    Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_111)
+    Type in expressions to have them evaluated.
+    Type :help for more information.
 
-scala>
-```
+    scala>
+    ```
 
-아래는 1~10000사이의 숫자 중에서 10보다 작은 수만 출력하는 예제입니다.
-```scala
-scala> val data = 1 to 10000
-scala> val distData = sc.parallelize(data)
-scala> distData.filter(_ < 10).collect()
-```
+    아래는 1~10000사이의 숫자 중에서 10보다 작은 수만 출력하는 예제입니다.
+
+    ```scala
+    scala> val data = 1 to 10000
+    scala> val distData = sc.parallelize(data)
+    scala> distData.filter(_ < 10).collect()
+    ```
 
 3. `pyspark` 사용
-`spark-shell`과 비슷하게 Python을 Spark에서 사용할 수 있습니다. 실행은 아래와 같습니다.
-```
-$ $SPARK_HOME/bin/pyspark --master spark://MASTER_IP_입력:7077
-```
-실행 직후 화면입니다.
-```python
-Welcome to
-      ____              __
-     / __/__  ___ _____/ /__
-    _\ \/ _ \/ _ `/ __/  '_/
-   /__ / .__/\_,_/_/ /_/\_\   version 2.1.0
-      /_/
+    `spark-shell`과 비슷하게 Python을 Spark에서 사용할 수 있습니다. 실행은 아래와 같습니다.
+    ```
+    $ $SPARK_HOME/bin/pyspark --master spark://MASTER_IP_입력:7077
+    ```
 
-Using Python version 3.5.2 (default, Nov 17 2016 17:05:23)
-SparkSession available as 'spark'.
->>>
-```
+    실행 직후 화면입니다.
 
-```python
->>> rdd1 = sc.parallelize(range(1, 11))
->>> result = rdd1.collect()
->>> result
-```
+    ```python
+    Welcome to
+          ____              __
+         / __/__  ___ _____/ /__
+        _\ \/ _ \/ _ `/ __/  '_/
+       /__ / .__/\_,_/_/ /_/\_\   version 2.1.0
+          /_/
+
+    Using Python version 3.5.2 (default, Nov 17 2016 17:05:23)
+    SparkSession available as 'spark'.
+    >>>
+    ```
+
+    ```python
+    >>> rdd1 = sc.parallelize(range(1, 11))
+    >>> result = rdd1.collect()
+    >>> result
+    ```
 
 4. `jupyter notebook` 활용
-`jupyter notebook`에서 `pyspark`를 실행해보겠습니다. 이를 위해 몇 가지 설정을 추가해줘야 합니다. [PySpark를 Jupyter에서 사용하기](https://jongwoo315.github.io/09-jupyter_add_pyspark/){:target="_blank"}를 참고하시면 됩니다. 추가 후, `$SPARK_HOME/sbin/stop-all.sh`로 Spark를 멈춘 후 `$SPARK_HOME/sbin/start-all.sh`로 다시 시작합니다. 그리고 `jupyter notebook`을 실행합니다.
+    `jupyter notebook`에서 `pyspark`를 실행해보겠습니다. 이를 위해 몇 가지 설정을 추가해줘야 합니다. [PySpark를 Jupyter에서 사용하기](https://jongwoo315.github.io/09-jupyter_add_pyspark/){:target="_blank"}를 참고하시면 됩니다. 추가 후, `$SPARK_HOME/sbin/stop-all.sh`로 Spark를 멈춘 후 `$SPARK_HOME/sbin/start-all.sh`로 다시 시작합니다. 그리고 `jupyter notebook`을 실행합니다.
 
-```python
-from pyspark import SparkConf, SparkContext, SQLContext
-config = SparkConf().setMaster('spark://MASTER_IP_입력:7077').setAppName('pyspark_from_jupyter')
+    ```python
+    from pyspark import SparkConf, SparkContext, SQLContext
+    config = SparkConf().setMaster('spark://MASTER_IP_입력:7077').setAppName('pyspark_from_jupyter')
 
-sc1 = SparkContext(conf = config)
-sc1
-```
+    sc1 = SparkContext(conf = config)
+    sc1
+    ```
 
-```python
-rawData = sc1.textFile('/home/sparkuser/spark/README.md')
-print ('%s \n' % (rawData.first()))
-print (rawData.count())
-```
+    ```python
+    rawData = sc1.textFile('/home/sparkuser/spark/README.md')
+    print ('%s \n' % (rawData.first()))
+    print (rawData.count())
+    ```
 
 Spark를 실행할 수 있는 4가지 방법을 알아보았습니다. 그 결과를 web UI에서도 확인을 할 수 있습니다.
 
