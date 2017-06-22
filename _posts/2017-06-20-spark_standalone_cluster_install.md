@@ -257,11 +257,12 @@ slave에서 같은 멸령어를 실행하면 아래와 같이 뜹니다(slave에
 
 간단한 예제들을 통해 Spark를 실행해보겠습니다(실행 전 반드시 `jps`를 입력해 Master, Worker가 출력되는지 확인해야 합니다.).
 
-1. `spark-submit` 사용
-터미널에서 Spark프로그램을 실행할 수 있는 `spark-submit`입니다. 아래 예제는 Spark에 내장된 예제로써, pi의 값을 출력합니다. 실행이 되면 로그 사이에 Pi is roughly 3.140835704178521와 유사한 메세지를 찾을 수 있습니다.
-```
-$ $SPARK_HOME/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://MASTER_IP_입력:7077 /home/sparkuser/spark/examples/jars/spark-examples_2.11-2.1.0.jar
-```
+1. `spark-submit` 사용  
+
+    터미널에서 Spark프로그램을 실행할 수 있는 `spark-submit`입니다. 아래 예제는 Spark에 내장된 예제로써, pi의 값을 출력합니다. 실행이 되면 로그 사이에 Pi is roughly 3.140835704178521와 유사한 메세지를 찾을 수 있습니다.
+    ```
+    $ $SPARK_HOME/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://MASTER_IP_입력:7077 /home/sparkuser/spark/examples/jars/spark-examples_2.11-2.1.0.jar
+    ```
 
 2. `spark-shell` 사용
 Spark 프로그램을 실행하는 방법입니다.
