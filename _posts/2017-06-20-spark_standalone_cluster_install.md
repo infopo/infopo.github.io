@@ -222,7 +222,7 @@ export PATH=$SPARK_HOME/bin:$PATH
     # master, slave 다르게 설정가능합니다. 설정하지 않으면 가용한 모든 메모리를 사용합니다. :8089에서 확인 가능합니다.
     SPARK_WORKER_MEMORY=1g
 
-    # master, slave 다르게 설정가능합니다. 설정하지마 않으면 가용한 코어를 모두 사용합니다. :8089에서 확인 가능합니다.
+    # master, slave 다르게 설정가능합니다. 설정하지 않으면 가용한 코어를 모두 사용합니다. :8089에서 확인 가능합니다.
     SPARK_WORKER_CORES=4
     ```
 
