@@ -264,12 +264,13 @@ slave에서 같은 멸령어를 실행하면 아래와 같이 뜹니다(slave에
     $ $SPARK_HOME/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://MASTER_IP_입력:7077 /home/sparkuser/spark/examples/jars/spark-examples_2.11-2.1.0.jar
     ```
 
-2. `spark-shell` 사용
-Spark 프로그램을 실행하는 방법입니다.
-```
-$ $SPARK_HOME/bin/spark-shell --master spark://MASTER_IP_입력:7077
-```
-실행이 되었다면 아래와 같은 화면이 보일 것입니다.  
+2. `spark-shell` 사용  
+
+    Spark 프로그램을 실행하는 방법입니다.
+    ```
+    $ $SPARK_HOME/bin/spark-shell --master spark://MASTER_IP_입력:7077
+    ```
+    실행이 되었다면 아래와 같은 화면이 보일 것입니다.  
 
     ```scala
     Spark context available as 'sc' (master = spark://MASTER_IP:7077, app id = app-20170622221837-0001).
@@ -296,7 +297,8 @@ $ $SPARK_HOME/bin/spark-shell --master spark://MASTER_IP_입력:7077
     scala> distData.filter(_ < 10).collect()
     ```
 
-3. `pyspark` 사용
+3. `pyspark` 사용  
+
     `spark-shell`과 비슷하게 Python을 Spark에서 사용할 수 있습니다. 실행은 아래와 같습니다.
     ```
     $ $SPARK_HOME/bin/pyspark --master spark://MASTER_IP_입력:7077
@@ -324,6 +326,7 @@ $ $SPARK_HOME/bin/spark-shell --master spark://MASTER_IP_입력:7077
     ```
 
 4. `jupyter notebook` 활용
+
     `jupyter notebook`에서 `pyspark`를 실행해보겠습니다. 이를 위해 몇 가지 설정을 추가해줘야 합니다. [PySpark를 Jupyter에서 사용하기](https://jongwoo315.github.io/09-jupyter_add_pyspark/){:target="_blank"}를 참고하시면 됩니다. 추가 후, `$SPARK_HOME/sbin/stop-all.sh`로 Spark를 멈춘 후 `$SPARK_HOME/sbin/start-all.sh`로 다시 시작합니다. 그리고 `jupyter notebook`을 실행합니다.
 
     ```python
