@@ -195,6 +195,7 @@ AuthorizedKeysFile .ssh/authorized_keys
 
 
 - keygen (master)  
+
 ```
 $ ssh-keygen -t rsa -P ""
 $ cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
@@ -206,6 +207,7 @@ $ scp ~/.ssh/authorized_keys xxx.xxx.xxx.103:/home/sparkuser/.ssh/.
 ```
 
 - `/spark/conf`로 이동해 `slaves.template`와 `spark-env.sh.template`의 파일명을 변경합니다. (master)  
+
 ```
 $ sudo mv spark-env.sh.template spark-env.sh
 $ sudo mv slaves.template slaves
